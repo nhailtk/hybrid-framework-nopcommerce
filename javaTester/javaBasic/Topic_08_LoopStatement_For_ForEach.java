@@ -24,7 +24,7 @@ public class Topic_08_LoopStatement_For_ForEach {
 		for (int i = a; i <= b; i++) {
 			System.out.print(i + " ");
 		}
-	}
+		}
 
 	public void TC_03() {
 		int sum = 0;

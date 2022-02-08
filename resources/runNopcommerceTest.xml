@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nopcommerce">
-  <test name="RunOnChrome">
-    <classes>
-      <class name="com.nopcommerce.user.Page_Object"/>
-    </classes>
-  </test> <!-- Test -->
+
+	<test name="RunOnCocCoc">
+		<parameter name="browser" value="coccoc" />
+		<classes>
+			<class name="com.nopcommerce.user.Level_04_MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="RunOnChrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.nopcommerce.user.Level_04_MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="RunOnFirefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce.user.Level_04_MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="RunOnEdge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.nopcommerce.user.Level_04_MultiBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->

@@ -15,6 +15,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.AddressesPageObject;
+import pageObjects.OrdersPageObject;
+import pageObjects.PageGeneratorManager;
+import pageObjects.RewardPointsPageObject;
+import pageUIs.BasePageUI;
 public class BasePage {
 	public static BasePage getBasePageObject() {
 		return new BasePage();
@@ -327,6 +332,25 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
+	
+	public AddressesPageObject openAddressesPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ADDRESS_LINK);
+		clickToElement(driver, BasePageUI.ADDRESS_LINK);
+		return PageGeneratorManager.getAddressesPage(driver);
+	}
+	
+	public OrdersPageObject openOrdersPage(WebDriver driver) {
+	waitForElementClickable(driver, BasePageUI.ORDER_LINK);
+		clickToElement(driver, BasePageUI.ORDER_LINK);
+		return PageGeneratorManager.getOrdersPage(driver);
+	}
+	
+	public RewardPointsPageObject openRewardPointsPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.REWARD_POINTS_LINK);
+		clickToElement(driver, BasePageUI.REWARD_POINTS_LINK);
+		return PageGeneratorManager.getRewardPointsPage(driver);
+	}
+	
 	protected long longTimeOut = 30;
 	
 }

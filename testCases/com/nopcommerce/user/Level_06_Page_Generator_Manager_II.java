@@ -12,17 +12,17 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserHomePageObject;
+import demo.nopcommerce.com.pageObjects.user.UserLoginPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_II extends BaseTest {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String validEmail, invalidEmail, notFoundEmail;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 	String firstName = "Automation", lastName = "FC", password = "123456";
 
 	@Parameters("browser")
@@ -34,7 +34,7 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 		notFoundEmail = "automation" + randomEmailByNumber() + "@abc.com";
 		invalidEmail = "abc@123#456";
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		registerPage = homePage.clickToRegisterLink();
 
@@ -48,7 +48,7 @@ public class Level_06_Page_Generator_Manager_II extends BaseTest {
 
 		Assert.assertEquals(registerPage.getSuccessMessageRegister(), "Your registration completed");
 
-		homePage = registerPage.clickToLogOutLink();
+		homePage = registerPage.clickToLogOutUserLink(driver);
 
 	}
 

@@ -12,26 +12,26 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.OrdersPageObject;
-import pageObjects.AddressesPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointsPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserAddressesPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserCustomerInfoPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserHomePageObject;
+import demo.nopcommerce.com.pageObjects.user.UserLoginPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserOrdersPageObject;
+import demo.nopcommerce.com.pageObjects.user.PageGeneratorManager;
+import demo.nopcommerce.com.pageObjects.user.UserRegisterPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserRewardPointsPageObject;
 
 public class Level_07_Switch_Page extends BaseTest {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String validEmail, invalidEmail, notFoundEmail;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfoPage;
-	private AddressesPageObject addressesPage;
-	private OrdersPageObject ordersPage;
-	private RewardPointsPageObject rewardPointsPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserAddressesPageObject addressesPage;
+	private UserOrdersPageObject ordersPage;
+	private UserRewardPointsPageObject rewardPointsPage;
 
 	String firstName = "Automation", lastName = "FC", password = "123456";
 
@@ -44,7 +44,7 @@ public class Level_07_Switch_Page extends BaseTest {
 		notFoundEmail = "automation" + randomEmailByNumber() + "@abc.com";
 		invalidEmail = "abc@123#456";
 
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	@Test
@@ -61,7 +61,7 @@ public class Level_07_Switch_Page extends BaseTest {
 
 		Assert.assertEquals(registerPage.getSuccessMessageRegister(), "Your registration completed");
 
-		homePage = registerPage.clickToLogOutLink();
+		homePage = registerPage.clickToLogOutUserLink(driver);
 	}
 
 	@Test

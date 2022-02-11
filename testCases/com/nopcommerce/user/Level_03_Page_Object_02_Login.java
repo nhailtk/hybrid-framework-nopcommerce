@@ -10,17 +10,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserHomePageObject;
+import demo.nopcommerce.com.pageObjects.user.UserLoginPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserRegisterPageObject;
 
 public class Level_03_Page_Object_02_Login {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String validEmail, invalidEmail, notFoundEmail;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 	String firstName = "Automation", lastName = "FC", password = "123456";
 
 	@BeforeClass
@@ -33,10 +33,10 @@ public class Level_03_Page_Object_02_Login {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);
@@ -48,9 +48,9 @@ public class Level_03_Page_Object_02_Login {
 
 		Assert.assertEquals(registerPage.getSuccessMessageRegister(), "Your registration completed");
 
-		registerPage.clickToLogOutLink();
+		registerPage.clickToLogOutUserLink(driver);
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 	}
 
@@ -58,7 +58,7 @@ public class Level_03_Page_Object_02_Login {
 	public void TC_01_Login_Empty_Email() {
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.clickToLoginButton();
 
@@ -69,7 +69,7 @@ public class Level_03_Page_Object_02_Login {
 	public void TC_02_Login_Invalid_Email() {
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(invalidEmail);
 
@@ -83,7 +83,7 @@ public class Level_03_Page_Object_02_Login {
 	public void TC_03_Login_Email_Not_Existing() {
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(notFoundEmail);
 
@@ -98,7 +98,7 @@ public class Level_03_Page_Object_02_Login {
 
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox("");
@@ -113,7 +113,7 @@ public class Level_03_Page_Object_02_Login {
 
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox("123476");
@@ -128,14 +128,14 @@ public class Level_03_Page_Object_02_Login {
 
 		homePage.clickToLoginLink();
 
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox(password);
 
 		loginPage.clickToLoginButton();
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
 	}

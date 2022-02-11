@@ -11,21 +11,21 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import demo.nopcommerce.com.pageObjects.user.UserHomePageObject;
+import demo.nopcommerce.com.pageObjects.user.UserRegisterPageObject;
 
 public class Level_04_MultiBrowser extends BaseTest {
 	private WebDriver driver;
 	private String emailAddress;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
+	UserHomePageObject homePage;
+	UserRegisterPageObject registerPage;
 	String firstName = "Automation", lastName = "FC", password = "123456";
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getWebDriver(browserName);
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		emailAddress = "automation" + randomEmailByNumber() + "@gmail.com";
 	}
 
@@ -33,7 +33,7 @@ public class Level_04_MultiBrowser extends BaseTest {
 	public void TC_01_Register_Empty_Data() {
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.registergetErrorMessageAtFirstNameTextbox(), "First name is required.");
@@ -48,7 +48,7 @@ public class Level_04_MultiBrowser extends BaseTest {
 	public void TC_02_Register_Invalid_Email() {
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstNameTextbox(firstName);
 		registerPage.inputToLastNameTextbox(lastName);

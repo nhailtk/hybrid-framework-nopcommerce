@@ -1,6 +1,6 @@
-package pageUIs;
+package demo.nopcommerce.com.pageUIs.user;
 
-public class RegisterPageUI {
+public class UserRegisterPageUI {
 	public static final  String REGISTER_BUTTON = "//button[@id='register-button']";
 	public static final  String FIRSTNAME_TEXTBOX = "//input[@id='FirstName']";
 	public static final  String LASTNAME_TEXTBOX = "//input[@id='LastName']";

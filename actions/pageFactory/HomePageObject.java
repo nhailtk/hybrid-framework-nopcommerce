@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import common.BasePageFactory;
-import pageUIs.HomePageUI;
+import demo.nopcommerce.com.pageUIs.user.UserHomePageUI;
 
 public class HomePageObject extends BasePageFactory {
 	private WebDriver driver;

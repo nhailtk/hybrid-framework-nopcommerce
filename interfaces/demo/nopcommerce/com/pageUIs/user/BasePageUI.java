@@ -1,4 +1,4 @@
-package pageUIs;
+package demo.nopcommerce.com.pageUIs.user;
 
 public class BasePageUI {
 	public static final String ADDRESS_LINK = "//li[@class ='customer-addresses inactive']/a";

@@ -76,7 +76,7 @@ public class Level_08_Switch_Role extends BaseTest {
 
 	}
 
-	@Test
+	
 	public void TC_02_Admin_To_User() {
 
 		adminDashBoardPageObject = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);

@@ -1,18 +1,18 @@
 package demo.nopcommerce.com.pageUIs.user;
 
 public class UserRegisterPageUI {
-	public static final  String REGISTER_BUTTON = "//button[@id='register-button']";
-	public static final  String FIRSTNAME_TEXTBOX = "//input[@id='FirstName']";
-	public static final  String LASTNAME_TEXTBOX = "//input[@id='LastName']";
-	public static final  String EMAIL_TEXTBOX = "//input[@id='Email']";
-	public static final  String PASSWORD_TEXTBOX = "//input[@id='Password']";
-	public static final  String CONFIRM_PASSWORD_TEXTBOX = "//input[@id='ConfirmPassword']";
-	public static final  String LOGOUT_BUTTON = "//a[@class='ico-logout']";
-	public static final  String FIRST_NAME_ERROR = "//span[@id='FirstName-error']";
-	public static final  String LAST_NAME_ERROR = "//span[@id='LastName-error']";
-	public static final  String EMAIL_ERROR = "//span[@id='Email-error']";
-	public static final  String PASSWORD_ERROR = "//span[@id='Password-error']";
-	public static final  String CONFIRM_PASSWORD_ERROR = "//span[@id='ConfirmPassword-error']";
-	public static final  String SUCCESS_REGISTER_MESSAGE = "//div[@class='result']";
-	public static final  String EXITSTING_EMAIL_ERROR = "//div[contains(@class,'message-error')]//li";
+	public static final  String REGISTER_BUTTON = "xpath=//button[@id='register-button']";
+	public static final  String FIRSTNAME_TEXTBOX = "xpath=//input[@id='FirstName']";
+	public static final  String LASTNAME_TEXTBOX = "xpath=//input[@id='LastName']";
+	public static final  String EMAIL_TEXTBOX = "xpath=//input[@id='Email']";
+	public static final  String PASSWORD_TEXTBOX = "xpath=//input[@id='Password']";
+	public static final  String CONFIRM_PASSWORD_TEXTBOX = "xpath=//input[@id='ConfirmPassword']";
+	public static final  String LOGOUT_BUTTON = "css=a.ico-logout";
+	public static final  String FIRST_NAME_ERROR = "xpath=//span[@id='FirstName-error']";
+	public static final  String LAST_NAME_ERROR = "xpath=//span[@id='LastName-error']";
+	public static final  String EMAIL_ERROR = "xpath=//span[@id='Email-error']";
+	public static final  String PASSWORD_ERROR = "xpath=//span[@id='Password-error']";
+	public static final  String CONFIRM_PASSWORD_ERROR = "xpath=//span[@id='ConfirmPassword-error']";
+	public static final  String SUCCESS_REGISTER_MESSAGE = "xpath=//div[@class='result']";
+	public static final  String EXITSTING_EMAIL_ERROR = "xpath=//div[contains(@class,'message-error')]//li";
 }

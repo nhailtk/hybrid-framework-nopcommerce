@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Jquery">
+<parameter name="url" value="http://live.techpanda.org/" />
+	<test name="RunOnChrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.jquery.Level_10_DataTable_BTVN_UserPage" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

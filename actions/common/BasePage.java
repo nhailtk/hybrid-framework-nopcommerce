@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -55,7 +56,7 @@ public class BasePage {
 		driver.navigate().forward();
 	}
 
-	protected void refreshCurrentPage(WebDriver driver) {
+	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
 	}
 
@@ -172,14 +173,24 @@ public class BasePage {
 		element.sendKeys(textValue);
 	}
 
-	protected void selectItemInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem) {
+	protected void selectItemByValueInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem) {
 		Select select = new Select(getElement(driver, xpathLocator));
 		select.selectByValue(textItem);
 	}
 
-	protected void selectItemInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem, String... dynamicValues) {
+	protected void selectItemByValueInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem, String... dynamicValues) {
 		Select select = new Select(getElement(driver, getDynamicXpath(xpathLocator, dynamicValues)));
 		select.selectByValue(textItem);
+	}
+
+	protected void selectItemByTextInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem) {
+		Select select = new Select(getElement(driver, xpathLocator));
+		select.selectByVisibleText(textItem);
+	}
+
+	protected void selectItemByTextInDefaultDropdown(WebDriver driver, String xpathLocator, String textItem, String... dynamicValues) {
+		Select select = new Select(getElement(driver, getDynamicXpath(xpathLocator, dynamicValues)));
+		select.selectByVisibleText(textItem);
 	}
 
 	protected String getFirstItemInDefaultDropdown(WebDriver driver, String xpathLocator) {
@@ -217,7 +228,7 @@ public class BasePage {
 		}
 	}
 
-	protected void sleepInSecond(long seconds) {
+	public void sleepInSecond(long seconds) {
 		try {
 			Thread.sleep(seconds * 1000);
 		} catch (InterruptedException e) {
@@ -257,6 +268,13 @@ public class BasePage {
 		return getListWebElement(driver, getDynamicXpath(xpathLocator, dynamicValues)).size();
 	}
 
+	protected void checktoDefaultCheckboxRadio(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		WebElement element = getElement(driver, getDynamicXpath(xpathLocator, dynamicValues));
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+
 	protected void checktoDefaultCheckboxRadio(WebDriver driver, String xpathLocator) {
 		WebElement element = getElement(driver, xpathLocator);
 		if (!element.isSelected()) {
@@ -266,6 +284,13 @@ public class BasePage {
 
 	protected void unchecktoDefaultCheckboxRadio(WebDriver driver, String xpathLocator) {
 		WebElement element = getElement(driver, xpathLocator);
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+
+	protected void unchecktoDefaultCheckboxRadio(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		WebElement element = getElement(driver, getDynamicXpath(xpathLocator, dynamicValues));
 		if (element.isSelected()) {
 			element.click();
 		}
@@ -306,6 +331,16 @@ public class BasePage {
 	protected void hoverMouseToElement(WebDriver driver, String xpathLocator) {
 		Actions action = new Actions(driver);
 		action.moveToElement(getElement(driver, xpathLocator)).perform();
+	}
+
+	protected void pressKeyToElement(WebDriver driver, String xpathLocator, Keys key) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getElement(driver, xpathLocator), key).perform();
+	}
+
+	protected void pressKeyToElement(WebDriver driver, String xpathLocator, Keys key, String... dynamicValues) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getElement(driver, getDynamicXpath(xpathLocator, dynamicValues)), key).perform();
 	}
 
 	protected void scrollToBottomPage(WebDriver driver) {
@@ -435,7 +470,7 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(xpathLocator, dynamicValues))));
 	}
-	
+
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.CUSTOMER_INFO_LINK);
 		clickToElement(driver, BasePageUI.CUSTOMER_INFO_LINK);
@@ -488,12 +523,12 @@ public class BasePage {
 			throw new RuntimeException("Invalid page name at My Account");
 		}
 	}
-	
+
 	public void openDynamicMorePage(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_LINK, pageName);
 		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_LINK, pageName);
 	}
 
-	protected long longTimeOut = 30;
+	protected long longTimeOut = GlobalConstants.LONG_TIMEOUT;
 
 }

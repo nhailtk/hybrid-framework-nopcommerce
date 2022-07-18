@@ -40,7 +40,7 @@ public class HomePageObject extends BasePage {
 		// duyet qua tat cac cac page
 		for (int i = 1; i <= totalPage; i++) {
 			clickToElement(driver, HomePageUI.PAGING_BY_NUMBER, String.valueOf(i));
-			//duyet tat ca cac element tren 1 page
+			// duyet tat ca cac element tren 1 page
 			List<WebElement> allRowEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_COUNTRY_IN_EACH_PAGE);
 			for (WebElement eachElement : allRowEachPage) {
 				allRowValuesAllPage.add(eachElement.getText());
@@ -91,8 +91,32 @@ public class HomePageObject extends BasePage {
 	}
 
 	public void clickToRemoveButtonByRowNumber(String rowNumber, String textButton) {
-		waitForElementClickable(driver, HomePageUI.BUTTON_BY_ROW_NUMBER, rowNumber, textButton );
-		clickToElement(driver,HomePageUI.BUTTON_BY_ROW_NUMBER, rowNumber, textButton );
+		waitForElementClickable(driver, HomePageUI.BUTTON_BY_ROW_NUMBER, rowNumber, textButton);
+		clickToElement(driver, HomePageUI.BUTTON_BY_ROW_NUMBER, rowNumber, textButton);
+	}
+
+	public boolean isDisplayFileNameLoaded(String fileName1) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_LOAD_SUCCESS, fileName1);
+		return elementIsDisplayed(driver, HomePageUI.FILE_NAME_LOAD_SUCCESS, fileName1);
+	}
+
+	public void clickToStartButton() {
+		List<WebElement> startButtons = getListWebElement(driver, HomePageUI.BUTTON_START);
+		for (WebElement startButton : startButtons) {
+			startButton.click();
+			sleepInSecond(2);
+		}
+
+	}
+
+	public boolean isDisplayFileNameUploaded(String fileName1) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOAD_SUCCESS, fileName1);
+		return elementIsDisplayed(driver, HomePageUI.FILE_NAME_UPLOAD_SUCCESS, fileName1);
+	}
+
+	public boolean isDisplayImageUploaded(String fileName1) {
+		waitForElementVisible(driver, HomePageUI.IMAGE_UPLOAD_SUCCESS, fileName1);
+		return isImageLoaded(driver, HomePageUI.IMAGE_UPLOAD_SUCCESS, fileName1);
 	}
 
 }

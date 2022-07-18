@@ -6,6 +6,7 @@ import common.BasePage;
 import common.GlobalConstants;
 import demo.nopcommerce.com.pageObjects.admin.AdminLoginPageObject;
 import demo.nopcommerce.com.pageUIs.user.UserHomePageUI;
+import facebook.com.pageUIs.HomePageUI;
 
 public class UserHomePageObject extends BasePage {
 	private WebDriver driver;
@@ -44,5 +45,10 @@ public class UserHomePageObject extends BasePage {
 	public AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
 		openPageUrl(driver, GlobalConstants.ADMIN_URL_LINK);
 		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+
+	public boolean verifyElementIsDisplayed() {
+		waitForElementUndisplayed(driver, HomePageUI.CONFIRM_EMAIL_TEXTBOX);
+		return elementIsUndisplayed(driver, HomePageUI.CONFIRM_EMAIL_TEXTBOX);
 	}
 }

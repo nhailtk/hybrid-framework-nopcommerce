@@ -2,11 +2,13 @@ package common;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.jquery.pageUIs.HomePageUI;
 
 import demo.nopcommerce.com.pageObjects.user.UserAddressesPageObject;
 import demo.nopcommerce.com.pageObjects.user.UserCustomerInfoPageObject;
@@ -299,9 +303,38 @@ public class BasePage {
 	protected boolean elementIsDisplayed(WebDriver driver, String xpathLocator) {
 		return getElement(driver, xpathLocator).isDisplayed();
 	}
-
+	
 	protected boolean elementIsDisplayed(WebDriver driver, String xpathLocator, String... dynamicValues) {
 		return getElement(driver, getDynamicXpath(xpathLocator, dynamicValues)).isDisplayed();
+	}
+	
+	protected boolean elementIsUndisplayed(WebDriver driver, String xpathLocator) {
+		overrideGlobalTimeOut(driver,shortTimeOut);
+		List<WebElement> elements = getListWebElement(driver, xpathLocator);
+		overrideGlobalTimeOut(driver,longTimeOut);
+		if(elements.size()==0) {
+			return true;
+		}else if(elements.size()>0 && !elements.get(0).isDisplayed()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	protected boolean elementIsUndisplayed(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		overrideGlobalTimeOut(driver,shortTimeOut);
+		List<WebElement> elements = getListWebElement(driver, getDynamicXpath(xpathLocator, dynamicValues));
+		overrideGlobalTimeOut(driver,longTimeOut);
+		if(elements.size()==0) {
+			return true;
+		}else if(elements.size()>0 && !elements.get(0).isDisplayed()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	protected void overrideGlobalTimeOut(WebDriver driver, long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 
 	protected boolean elementIsEnabled(WebDriver driver, String xpathLocator) {
@@ -431,6 +464,16 @@ public class BasePage {
 		}
 	}
 
+	protected boolean isImageLoaded(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getElement(driver, getDynamicXpath(xpathLocator, dynamicValues)));
+		if (status) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	protected void waitForElementVisible(WebDriver driver, String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(xpathLocator)));
@@ -450,11 +493,25 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(xpathLocator)));
 	}
-
+	
 	protected void waitForElementInisible(WebDriver driver, String xpathLocator, String... dynamicValues) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(xpathLocator, dynamicValues))));
 	}
+	
+	protected void waitForElementUndisplayed(WebDriver driver, String xpathLocator) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeOut);
+		overrideGlobalTimeOut(driver, shortTimeOut);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(xpathLocator)));
+		overrideGlobalTimeOut(driver, longTimeOut);
+	} 
+	
+	protected void waitForElementUndisplayed(WebDriver driver, String xpathLocator, String... dynamicValues) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeOut);
+		overrideGlobalTimeOut(driver, shortTimeOut);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(xpathLocator, dynamicValues))));
+		overrideGlobalTimeOut(driver, longTimeOut);
+	} 
 
 	protected void waitForAllElementInvisible(WebDriver driver, String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeOut);
@@ -529,6 +586,17 @@ public class BasePage {
 		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_LINK, pageName);
 	}
 
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE;
+		String fileFullName = "";
+		for (String file : fileNames) {
+			fileFullName = fileFullName + filePath + file + "\n";
+		}
+		fileFullName = fileFullName.trim();
+		getElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fileFullName);
+	}
+
+	protected long shortTimeOut = GlobalConstants.SHORT_TIMEOUT;
 	protected long longTimeOut = GlobalConstants.LONG_TIMEOUT;
 
 }

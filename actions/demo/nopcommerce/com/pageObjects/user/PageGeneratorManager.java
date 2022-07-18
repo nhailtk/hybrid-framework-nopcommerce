@@ -42,4 +42,5 @@ public class PageGeneratorManager {
 		return new UserRewardPointsPageObject(driver);
 	}
 
+
 }

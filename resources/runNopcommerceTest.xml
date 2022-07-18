@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nopcommerce">
 
-
+	<listeners>
+		<listener class-name="common.MethodListener"></listener>
+	</listeners>
+	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<test name="RunOnChrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_09_Dynamic_Locator" />
+			<class name="com.nopcommerce.user.Level_14_Log_ReportNG" />
 		</classes>
 	</test> <!-- Test -->
 

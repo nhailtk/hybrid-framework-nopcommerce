@@ -61,7 +61,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		log.info("Register - step 8 - verify customer info");
-		verifyEquals(registerPage.getSuccessMessageRegister(), "Your registration completed");
+		verifyEquals(registerPage.getSuccessMessageRegister(), "Your rigistration completed");
 
 		log.info("Register - step 9 - check undisplayed");
 		verifyTrue(homePage.verifyElementIsDisplayed());
@@ -70,14 +70,21 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		homePage = registerPage.clickToLogOutUserLink(driver);
 	}
 
+	@Test
 	public void TC_User_02_Login() {
+		log.info("Login - step 1 - click to 'Login' link");
 		loginPage = homePage.clickToLoginLink();
-
+		
+		log.info("Login - step 2 - input value into 'Email' textbox: " + validEmail);
 		loginPage.inputToEmailTextbox(validEmail);
+		
+		log.info("Login - step 3 - input value into 'Password' textbox: " + password);
 		loginPage.inputToPasswordTextbox(password);
 
+		log.info("Login - step 4 - click to 'Login' button");
 		homePage = loginPage.clickToLoginButton();
-		verifyFalse(homePage.isMyAccountLinkDisplayed());
+		
+		log.info("Login - step 5 - verify My Account Link displayed");
 		verifyTrue(homePage.isMyAccountLinkDisplayed());
 
 	}

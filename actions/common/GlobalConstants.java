@@ -8,10 +8,12 @@ public class GlobalConstants {
 	public static final String ADMIN_LIVE_GURU_URL_LINK = "http://live.techpanda.org/index.php/backendlogin/customer/";
 
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
+	public static final String JAVA_VERSION = System.getProperty("java.version");
 	public static final String OS_NAME = System.getProperty("os.name");
 	public static final String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFile" + File.separator;
 	public static final String DOWNLOAD_FILE = PROJECT_PATH + File.separator + "downloadFile";
 	public static final String BROWSER_LOG = PROJECT_PATH + File.separator + "browserLogs";
+	public static final String REPORT_NG_SCREENSHOT = PROJECT_PATH + File.separator + "ReportNGScreenShots" + File.separator;
 
 	// SERVER/DB/ACCOUNT/PASSWORD
 	public static final String DB_TEST = "";

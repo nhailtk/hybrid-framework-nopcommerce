@@ -1,0 +1,114 @@
+[INFO ] [2022-07-20 20:26:42,487] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-20 20:26:44,705] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-20 20:26:44,989] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-20 20:26:45,218] Register - step 4 - input value into 'Email' textbox: automation868@gmail.com
+[INFO ] [2022-07-20 20:26:45,474] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 20:26:45,671] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-20 20:26:45,865] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-20 20:26:47,677] Register - step 8 - verify customer info
+[INFO ] [2022-07-20 20:26:47,728] verifyEquals=======================PASS====================
+[INFO ] [2022-07-20 20:26:47,730] Register - step 9 - check undisplayed
+[INFO ] [2022-07-20 20:26:58,032] verifyTrue=======================PASS====================
+[INFO ] [2022-07-20 20:26:58,033] Register - step 9 - logout system
+[INFO ] [2022-07-20 21:06:33,045] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-20 21:06:34,797] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-20 21:06:35,075] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-20 21:06:35,283] Register - step 4 - input value into 'Email' textbox: automation1430@gmail.com
+[INFO ] [2022-07-20 21:06:35,538] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 21:06:35,737] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-20 21:06:35,931] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-20 21:06:37,707] Register - step 8 - verify customer info
+[INFO ] [2022-07-20 21:06:37,759] verifyEquals=======================PASS====================
+[INFO ] [2022-07-20 21:06:37,762] Register - step 9 - check undisplayed
+[INFO ] [2022-07-20 21:06:47,942] verifyTrue=======================PASS====================
+[INFO ] [2022-07-20 21:06:47,942] Register - step 9 - logout system
+[INFO ] [2022-07-20 21:06:50,559] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-20 21:06:54,086] Login - step 2 - input value into 'Email' textbox: automation1430@gmail.com
+[INFO ] [2022-07-20 21:06:54,742] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 21:06:55,278] Login - step 4 - click to 'Login' button
+[INFO ] [2022-07-20 21:06:57,042] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-20 21:06:57,201] verifyTrue=======================PASS====================
+[INFO ] [2022-07-20 21:09:24,185] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-20 21:09:25,867] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-20 21:09:26,112] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-20 21:09:26,298] Register - step 4 - input value into 'Email' textbox: automation1479@gmail.com
+[INFO ] [2022-07-20 21:09:26,547] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 21:09:26,744] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-20 21:09:26,946] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-20 21:09:29,486] Register - step 8 - verify customer info
+[INFO ] [2022-07-20 21:09:29,540] verifyEquals=======================PASS====================
+[INFO ] [2022-07-20 21:09:29,543] verifyEquals=======================FAIL====================
+[INFO ] [2022-07-20 21:09:29,545] Register - step 9 - check undisplayed
+[INFO ] [2022-07-20 21:09:39,652] verifyTrue=======================PASS====================
+[INFO ] [2022-07-20 21:09:39,653] Register - step 9 - logout system
+[INFO ] [2022-07-20 21:09:41,131] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-20 21:09:43,394] Login - step 2 - input value into 'Email' textbox: automation1479@gmail.com
+[INFO ] [2022-07-20 21:09:43,813] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 21:09:44,106] Login - step 4 - click to 'Login' button
+[INFO ] [2022-07-20 21:09:45,540] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-20 21:09:45,731] verifyTrue=======================PASS====================
+[INFO ] [2022-07-20 21:45:47,970] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-20 21:45:50,430] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-20 21:45:50,698] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-20 21:45:50,904] Register - step 4 - input value into 'Email' textbox: automation5853@gmail.com
+[INFO ] [2022-07-20 21:45:51,149] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-20 21:45:51,339] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-20 21:45:51,528] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-20 21:45:53,369] Register - step 8 - verify customer info
+[INFO ] [2022-07-20 21:45:53,662] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-23 09:41:54,357] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 09:41:56,111] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 09:41:56,368] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 09:41:56,567] Register - step 4 - input value into 'Email' textbox: automation1297@gmail.com
+[INFO ] [2022-07-23 09:41:56,837] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 09:41:57,090] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 09:41:57,323] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 09:41:59,059] Register - step 8 - verify customer info
+[INFO ] [2022-07-23 09:41:59,381] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-23 09:52:55,456] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 09:52:57,009] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 09:52:57,272] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 09:52:57,468] Register - step 4 - input value into 'Email' textbox: automation9965@gmail.com
+[INFO ] [2022-07-23 09:52:57,719] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 09:52:57,938] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 09:52:58,188] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 09:53:00,317] Register - step 8 - verify customer info
+[INFO ] [2022-07-23 09:53:00,742] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-23 10:01:47,205] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 10:01:48,900] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 10:01:49,191] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 10:01:49,413] Register - step 4 - input value into 'Email' textbox: automation636@gmail.com
+[INFO ] [2022-07-23 10:01:49,717] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 10:01:49,932] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 10:01:50,195] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 10:01:52,151] Register - step 8 - verify customer info
+[INFO ] [2022-07-23 10:01:52,432] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-23 10:24:51,457] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 10:24:53,024] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 10:24:53,285] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 10:24:53,486] Register - step 4 - input value into 'Email' textbox: automation4354@gmail.com
+[INFO ] [2022-07-23 10:24:53,738] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 10:24:53,929] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 10:24:54,121] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 10:24:55,911] Register - step 8 - verify customer info
+[INFO ] [2022-07-23 10:24:57,390] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-23 10:24:59,514] Login - step 2 - input value into 'Email' textbox: automation4354@gmail.com
+[INFO ] [2022-07-23 10:24:59,792] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 10:25:00,044] Login - step 4 - click to 'Login' button
+[INFO ] [2022-07-23 10:25:01,360] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-23 11:11:19,087] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 11:11:20,301] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 11:11:20,510] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 11:11:20,683] Register - step 4 - input value into 'Email' textbox: automation8715@gmail.com
+[INFO ] [2022-07-23 11:11:20,919] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 11:11:21,081] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 11:11:21,249] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 11:11:23,392] Register - step 8 - verify customer info
+[INFO ] [2022-07-23 11:43:24,126] Register - step 1 - click to 'Register' link
+[INFO ] [2022-07-23 11:43:25,319] Register - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-23 11:43:25,517] Register - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-23 11:43:25,669] Register - step 4 - input value into 'Email' textbox: automation7821@gmail.com
+[INFO ] [2022-07-23 11:43:25,865] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-23 11:43:26,010] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-23 11:43:26,158] Register - step 7 - click to 'Register' button
+[INFO ] [2022-07-23 11:43:28,417] Register - step 8 - verify customer info

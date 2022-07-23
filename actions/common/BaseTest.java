@@ -25,6 +25,9 @@ public class BaseTest {
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
 
 	public WebDriver getWebDriver(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {

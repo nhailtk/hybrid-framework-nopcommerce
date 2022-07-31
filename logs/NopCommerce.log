@@ -112,3 +112,74 @@
 [INFO ] [2022-07-23 11:43:26,010] Register - step 6 - input value into 'Confirm password' textbox: 123456
 [INFO ] [2022-07-23 11:43:26,158] Register - step 7 - click to 'Register' button
 [INFO ] [2022-07-23 11:43:28,417] Register - step 8 - verify customer info
+[INFO ] [2022-07-27 21:33:25,220] Login - step 1 - click to 'Login' link
+[INFO ] [2022-07-27 21:33:28,901] Login - step 2 - input value into 'Email' textbox: automation5005@gmail.com
+[INFO ] [2022-07-27 21:33:29,212] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-27 21:33:29,458] Login - step 4 - click to 'Login' button
+[INFO ] [2022-07-27 21:33:31,499] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-27 21:33:31,621] verifyTrue=======================PASS====================
+[INFO ] [2022-07-27 22:06:19,244] Pre-Condition - step 1 - click to 'Login' link
+[INFO ] [2022-07-27 22:06:21,109] Pre-Condition - step 2 - Set cookie and reload page
+[INFO ] [2022-07-27 22:06:23,264] Pre-Condition - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-27 22:06:24,765] verifyTrue=======================PASS====================
+[INFO ] [2022-07-27 22:07:21,768] Pre-Condition - step 1 - click to 'Login' link
+[INFO ] [2022-07-27 22:07:23,489] Pre-Condition - step 2 - Set cookie and reload page
+[INFO ] [2022-07-27 22:07:25,571] Pre-Condition - step 5 - verify My Account Link displayed
+[INFO ] [2022-07-27 22:07:26,619] verifyTrue=======================PASS====================
+[INFO ] [2022-07-31 14:46:53,719] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:46:56,379] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:46:56,659] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:46:56,852] Pre-Condition - step 4 - input value into 'Email' textbox: automation3529@gmail.com
+[INFO ] [2022-07-31 14:46:57,127] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:46:57,333] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:46:57,593] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:46:59,677] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:46:59,732] verifyEquals=======================PASS====================
+[INFO ] [2022-07-31 14:46:59,736] verifyEquals=======================FAIL====================
+[INFO ] [2022-07-31 14:46:59,746] Pre-Condition - step 9 - check undisplayed
+[INFO ] [2022-07-31 14:47:09,919] verifyTrue=======================PASS====================
+[INFO ] [2022-07-31 14:47:09,920] Pre-Condition - step 10 - logout system
+[INFO ] [2022-07-31 14:47:12,520] Pre-Condition - step 11 - click to 'Login' link
+[INFO ] [2022-07-31 14:47:14,276] Pre-Condition - step 12 - input value into 'Email' textbox: automation3529@gmail.com
+[INFO ] [2022-07-31 14:47:14,638] Pre-Condition - step 13 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:47:14,959] Pre-Condition - step 14 - click to 'Login' button
+[INFO ] [2022-07-31 14:47:16,742] Pre-Condition - step 15 - verify My Account Link displayed
+[INFO ] [2022-07-31 14:47:16,876] verifyTrue=======================PASS====================
+[INFO ] [2022-07-31 14:48:43,009] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:48:44,580] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:48:44,852] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:48:45,051] Pre-Condition - step 4 - input value into 'Email' textbox: automation5799@gmail.com
+[INFO ] [2022-07-31 14:48:45,309] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:48:45,514] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:48:45,712] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:48:49,286] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:50:22,392] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:50:24,018] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:50:24,264] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:50:24,464] Pre-Condition - step 4 - input value into 'Email' textbox: automation1688@gmail.com
+[INFO ] [2022-07-31 14:50:24,728] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:50:24,922] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:50:25,136] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:50:28,508] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:51:30,520] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:51:32,205] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:51:32,456] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:51:32,669] Pre-Condition - step 4 - input value into 'Email' textbox: automation3228@gmail.com
+[INFO ] [2022-07-31 14:51:32,929] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:51:33,134] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:51:33,336] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:51:35,225] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:51:35,280] Pre-Condition - step 9 - check undisplayed
+[INFO ] [2022-07-31 14:51:45,504] Pre-Condition - step 10 - logout system
+[INFO ] [2022-07-31 14:57:31,519] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:57:33,071] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:57:33,328] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:57:33,571] Pre-Condition - step 4 - input value into 'Email' textbox: automation8301@gmail.com
+[INFO ] [2022-07-31 14:57:33,868] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:57:34,056] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:57:34,251] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:57:35,944] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:57:35,999] Pre-Condition - step 9 - check undisplayed
+[INFO ] [2022-07-31 14:57:46,148] Pre-Condition - step 10 - logout system
+[INFO ] [2022-07-31 14:57:46,538] OS name = windows 10
+[INFO ] [2022-07-31 14:57:46,539] Driver instance name = chromedriver: chrome on windows (f96888753617b5535c48e45cf2216803)

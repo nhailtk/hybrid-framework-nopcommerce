@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -30,6 +31,7 @@ import demo.nopcommerce.com.pageObjects.user.UserRewardPointsPageObject;
 import demo.nopcommerce.com.pageUIs.admin.AdminDashBoardPageUI;
 import demo.nopcommerce.com.pageUIs.user.BasePageUI;
 import demo.nopcommerce.com.pageUIs.user.UserRegisterPageUI;
+import io.qameta.allure.Step;
 
 public class BasePage {
 	public static BasePage getBasePageObject() {
@@ -62,6 +64,17 @@ public class BasePage {
 
 	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
+	}
+	
+	public void setCookie(WebDriver driver, Set<Cookie> cookies) {
+		for(Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInSecond(2);
+	}
+	
+	public Set<Cookie> getCookies(WebDriver driver) {
+		return driver.manage().getCookies();
 	}
 
 	protected Alert waitForAlertPresence(WebDriver driver) {
@@ -552,6 +565,7 @@ public class BasePage {
 		return PageGeneratorManager.getUserRewardPointsPage(driver);
 	}
 
+	@Step("Click to Logout link")
 	public UserHomePageObject clickToLogOutUserLink(WebDriver driver) {
 		waitForElementClickable(driver, UserRegisterPageUI.LOGOUT_BUTTON);
 		clickToElement(driver, UserRegisterPageUI.LOGOUT_BUTTON);

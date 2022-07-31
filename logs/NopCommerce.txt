@@ -1,0 +1,12 @@
+[INFO ] [2022-07-31 14:57:31,519] Pre-Condition - step 1 - click to 'Register' link
+[INFO ] [2022-07-31 14:57:33,071] Pre-Condition - step 2 - input value into ' First name' textbox: Automation
+[INFO ] [2022-07-31 14:57:33,328] Pre-Condition - step 3 - input value into 'Last name' textbox: FC
+[INFO ] [2022-07-31 14:57:33,571] Pre-Condition - step 4 - input value into 'Email' textbox: automation8301@gmail.com
+[INFO ] [2022-07-31 14:57:33,868] Pre-Condition - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-07-31 14:57:34,056] Pre-Condition - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-07-31 14:57:34,251] Pre-Condition - step 7 - click to 'Register' button
+[INFO ] [2022-07-31 14:57:35,944] Pre-Condition - step 8 - verify customer info
+[INFO ] [2022-07-31 14:57:35,999] Pre-Condition - step 9 - check undisplayed
+[INFO ] [2022-07-31 14:57:46,148] Pre-Condition - step 10 - logout system
+[INFO ] [2022-07-31 14:57:46,538] OS name = windows 10
+[INFO ] [2022-07-31 14:57:46,539] Driver instance name = chromedriver: chrome on windows (f96888753617b5535c48e45cf2216803)

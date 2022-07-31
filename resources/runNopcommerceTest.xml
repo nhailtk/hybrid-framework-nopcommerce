@@ -4,16 +4,18 @@
 	<listeners>
 		<listener class-name="common.MethodListener"></listener>
 		<!-- <listener class-name="reportConfig.ReportNGListener"></listener> -->
-<!-- 		<listener class-name="reportConfig.ExtentReportListenerV2"></listener> -->
-		<listener class-name="reportConfig.ExtentTestListener"></listener>
-		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<!-- <listener class-name="reportConfig.ExtentReportListenerV2"></listener> -->
+<!-- 		<listener class-name="reportConfig.ExtentTestListener"></listener> -->
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+		<listener class-name="reportConfig.AllureTestListener"></listener>
+
 	</listeners>
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 	<test name="RunOnChrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_15_ExtendReportV5" />
+			<class name="com.nopcommerce.user.Level_17_Custom_Close_Browser" />
 		</classes>
 	</test> <!-- Test -->
 

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import demo.nopcommerce.com.pageUIs.user.UserLoginPageUI;
+import io.qameta.allure.Step;
 
 public class UserLoginPageObject extends BasePage {
 	private WebDriver driver;
@@ -12,6 +13,7 @@ public class UserLoginPageObject extends BasePage {
 		this.driver = driver;
 	}
 
+	@Step("Click to Login button")
 	public UserHomePageObject clickToLoginButton() {
 		waitForElementClickable(driver, UserLoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, UserLoginPageUI.LOGIN_BUTTON);

@@ -2,15 +2,21 @@ package common;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -28,6 +34,7 @@ public class BaseTest {
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
 	}
+
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}
@@ -35,9 +42,13 @@ public class BaseTest {
 	public WebDriver getWebDriver(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.setAcceptInsecureCerts(true);
+			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setAcceptInsecureCerts(false);
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -64,9 +75,13 @@ public class BaseTest {
 	public WebDriver getWebDriver(String browser, String appUrl) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.setAcceptInsecureCerts(true);
+			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setAcceptInsecureCerts(false);
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -137,12 +152,15 @@ public class BaseTest {
 		}
 		return pass;
 	}
-	
+
 	@BeforeSuite
 	public void deleteAllFilesInReportNGScreenshot() {
-		System.out.println("---------- START delete file in folder ----------");
 		deleteAllFileInFolder();
-		System.out.println("---------- END delete file in folder ----------");
+	}
+
+	public int randomByNumber() {
+		Random random = new Random();
+		return random.nextInt(99999);
 	}
 
 	public void deleteAllFileInFolder() {
@@ -161,7 +179,8 @@ public class BaseTest {
 			System.out.print(e.getMessage());
 		}
 	}
-	protected void closeBrowserAndDriver() {
+
+	protected void closeBrowserAndDriver(WebDriver driver) {
 		String cmd = "";
 		try {
 			String osName = System.getProperty("os.name").toLowerCase();
@@ -220,5 +239,30 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	protected String getCurrentDay() {
+		DateTime nowUTC = new DateTime();
+		int day = nowUTC.getDayOfMonth();
+//		if (day < 10) {
+//			String dayValue = "0" + day;
+//			return dayValue;
+//		}
+		return String.valueOf(day);
+	}
+
+	protected String getCurrentMonth() {
+		GregorianCalendar date = new GregorianCalendar();
+		int month = date.get(Calendar.MONTH);
+		return String.valueOf(month);
+	}
+
+	protected String getCurrentYear() {
+		DateTime now = new DateTime();
+		return now.getYear() + "";
+	}
+
+	protected String getToday() {
+		return getCurrentMonth() + " " + getCurrentDay() + "," + getCurrentYear();
 	}
 }

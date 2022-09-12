@@ -183,3 +183,414 @@
 [INFO ] [2022-07-31 14:57:46,148] Pre-Condition - step 10 - logout system
 [INFO ] [2022-07-31 14:57:46,538] OS name = windows 10
 [INFO ] [2022-07-31 14:57:46,539] Driver instance name = chromedriver: chrome on windows (f96888753617b5535c48e45cf2216803)
+[INFO ] [2022-08-03 06:44:45,043] OS name = windows 10
+[INFO ] [2022-08-03 06:44:45,045] Driver instance name = chromedriver: chrome on windows (4d1f47d5f15f93758e88189b4137b86c)
+[INFO ] [2022-08-30 06:02:44,304] OS name = windows 10
+[INFO ] [2022-08-30 06:02:44,309] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-08-30 06:04:29,873] OS name = windows 10
+[INFO ] [2022-08-30 06:04:29,877] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-08-30 06:08:58,708] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:09:07,844] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:09:07,885] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:09:38,418] OS name = windows 10
+[INFO ] [2022-08-30 06:09:38,419] Driver instance name = chromedriver: chrome on windows (fc4e0065f0713aa0d2a756dd0025522e)
+[INFO ] [2022-08-30 06:15:23,103] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:15:26,907] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:15:26,917] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:16:15,342] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:16:15,644] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:16:23,573] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:16:28,166] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:16:28,180] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:16:40,102] Post_01_Create 3: input to Post Title with value:  Post title 96784
+[INFO ] [2022-08-30 06:16:41,350] OS name = windows 10
+[INFO ] [2022-08-30 06:16:41,350] Driver instance name = chromedriver: chrome on windows (871581df48dc8864be6362e2e99385eb)
+[INFO ] [2022-08-30 06:23:47,826] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:23:58,412] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:23:58,466] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:23:59,011] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:23:59,364] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:24:05,360] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:24:08,860] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:24:08,943] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:24:23,301] Post_01_Create 3: input to Post Title with value:  Post title 66765
+[INFO ] [2022-08-30 06:24:25,670] Post_01_Create 4: input to Post body with value:  Post body 66765
+[INFO ] [2022-08-30 06:24:56,349] OS name = windows 10
+[INFO ] [2022-08-30 06:24:56,357] Driver instance name = chromedriver: chrome on windows (a1827ebd93f6646b519949431626798b)
+[INFO ] [2022-08-30 06:24:56,405] unexpected alert open: {Alert text : }
+  (Session info: chrome=104.0.5112.102): {Alert text : 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1827ebd93f6646b519949431626798b
+[INFO ] [2022-08-30 06:32:17,012] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:32:24,236] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:32:24,250] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:32:24,711] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:32:24,940] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:32:29,747] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:32:32,333] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:32:32,352] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:32:40,958] Post_01_Create 3: input to Post Title with value:  Post title 88479
+[INFO ] [2022-08-30 06:32:44,069] Post_01_Create 4: input to Post body with value:  Post body 88479
+[INFO ] [2022-08-30 06:33:14,772] OS name = windows 10
+[INFO ] [2022-08-30 06:33:14,776] Driver instance name = chromedriver: chrome on windows (7ad536fba1ed80ab5cb5dc58a5837067)
+[INFO ] [2022-08-30 06:33:14,840] unexpected alert open: {Alert text : }
+  (Session info: chrome=104.0.5112.102): {Alert text : 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64554}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad536fba1ed80ab5cb5dc58a5837067
+[INFO ] [2022-08-30 06:47:07,515] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:47:14,845] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:47:14,855] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:47:15,370] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:47:15,763] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:47:21,336] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:47:25,146] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:47:25,177] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:47:34,398] Post_01_Create 3: input to Post Title with value:  Post title 67066
+[INFO ] [2022-08-30 06:47:36,653] Post_01_Create 4: input to Post body with value:  Post body 67066
+[INFO ] [2022-08-30 06:48:10,179] OS name = windows 10
+[INFO ] [2022-08-30 06:48:10,180] Driver instance name = chromedriver: chrome on windows (00a2e6fd4e6bfb8570d2673b3f961202)
+[INFO ] [2022-08-30 06:48:10,425] unexpected alert open: {Alert text : }
+  (Session info: chrome=104.0.5112.102): {Alert text : 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00a2e6fd4e6bfb8570d2673b3f961202
+[INFO ] [2022-08-30 06:51:42,029] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:51:49,885] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:51:49,894] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:51:50,383] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:51:50,597] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:51:54,190] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:51:56,218] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:51:56,228] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:52:05,055] Post_01_Create 3: input to Post Title with value:  Post title 69525
+[INFO ] [2022-08-30 06:52:07,936] Post_01_Create 4: input to Post body with value:  Post body 69525
+[INFO ] [2022-08-30 06:52:10,819] Post_01_Create 5: click to Publish button
+[INFO ] [2022-08-30 06:52:11,169] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-08-30 06:52:41,626] OS name = windows 10
+[INFO ] [2022-08-30 06:52:41,627] Driver instance name = chromedriver: chrome on windows (cde6543dab4103fcb54c217b027a01e6)
+[INFO ] [2022-08-30 06:52:41,661] unexpected alert open: {Alert text : }
+  (Session info: chrome=104.0.5112.102): {Alert text : 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'ADMIN', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cde6543dab4103fcb54c217b027a01e6
+[INFO ] [2022-08-30 06:53:44,843] Precondition 1: get browser and url
+[INFO ] [2022-08-30 06:53:50,123] Precondition 2: open Login page
+[INFO ] [2022-08-30 06:53:50,134] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:53:50,565] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-08-30 06:53:50,777] Precondition 5: click to Login button
+[INFO ] [2022-08-30 06:53:55,395] Precondition 6: click to Post menu link
+[INFO ] [2022-08-30 06:53:57,387] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-08-30 06:53:57,396] Post_01_Create 2: click to Add New button
+[INFO ] [2022-08-30 06:54:04,764] Post_01_Create 3: input to Post Title with value:  Post title 15161
+[INFO ] [2022-08-30 06:54:06,844] Post_01_Create 4: input to Post body with value:  Post body 15161
+[INFO ] [2022-08-30 06:54:10,040] Post_01_Create 5: click to Publish button
+[INFO ] [2022-08-30 06:54:10,738] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-08-30 06:54:11,305] Post_01_Create 7: verify post published message
+[INFO ] [2022-08-30 06:54:16,299] OS name = windows 10
+[INFO ] [2022-08-30 06:54:16,299] Driver instance name = chromedriver: chrome on windows (b8270d343e6408a438051502bc0356a3)
+[INFO ] [2022-09-06 05:47:20,050] Precondition 1: get browser and url
+[INFO ] [2022-09-06 05:47:34,203] Precondition 2: open Login page
+[INFO ] [2022-09-06 05:47:34,212] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-06 05:47:34,859] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-06 05:47:35,168] Precondition 5: click to Login button
+[INFO ] [2022-09-06 05:47:44,743] Precondition 6: click to Post menu link
+[INFO ] [2022-09-06 05:47:49,494] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-06 05:47:49,511] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-06 05:48:07,728] Post_01_Create 3: input to Post Title with value:  Post title 19504
+[INFO ] [2022-09-06 05:48:11,738] Post_01_Create 4: input to Post body with value:  Post body 19504
+[INFO ] [2022-09-06 05:48:15,372] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-06 05:48:16,954] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-06 05:48:17,501] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-06 05:48:23,652] OS name = windows 10
+[INFO ] [2022-09-06 05:48:23,653] Driver instance name = chromedriver: chrome on windows (9cdead20f1f988f9a9ab7de18ba4b278)
+[INFO ] [2022-09-06 06:03:01,834] Precondition 1: get browser and url
+[INFO ] [2022-09-06 06:03:10,263] Precondition 2: open Login page
+[INFO ] [2022-09-06 06:03:10,273] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-06 06:03:10,794] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-06 06:03:11,068] Precondition 5: click to Login button
+[INFO ] [2022-09-06 06:03:17,034] Precondition 6: click to Post menu link
+[INFO ] [2022-09-06 06:03:19,892] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-06 06:03:19,905] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-06 06:03:31,758] Post_01_Create 3: input to Post Title with value:  Post title 63422
+[INFO ] [2022-09-06 06:03:34,788] Post_01_Create 4: input to Post body with value:  Post body 63422
+[INFO ] [2022-09-06 06:03:39,424] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-06 06:03:40,019] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-06 06:03:40,506] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-06 06:03:43,218] Post_02_Search_And_Read 1: Open Search Post Page
+[INFO ] [2022-09-06 06:03:46,547] OS name = windows 10
+[INFO ] [2022-09-06 06:03:46,548] Driver instance name = chromedriver: chrome on windows (851d8744389e5db918e171bf78b4dfd1)
+[INFO ] [2022-09-11 15:20:43,203] Precondition 1: get browser and url
+[INFO ] [2022-09-11 15:20:50,928] Precondition 2: open Login page
+[INFO ] [2022-09-11 15:20:51,027] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:21:17,968] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:21:18,414] Precondition 5: click to Login button
+[INFO ] [2022-09-11 15:21:31,716] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 15:21:36,846] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 15:21:36,860] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 15:21:49,583] Post_01_Create 3: input to Post Title with value:  Post title 50402
+[INFO ] [2022-09-11 15:21:52,483] Post_01_Create 4: input to Post body with value:  Post body 50402
+[INFO ] [2022-09-11 15:21:56,634] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 15:21:57,541] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 15:21:59,797] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 15:22:02,694] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 15:22:06,507] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 50402
+[INFO ] [2022-09-11 15:22:07,035] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 15:22:11,022] Post_02_Search_And_Read 4: verify Search table contain:  Post title 50402
+[INFO ] [2022-09-11 15:22:11,194] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 15:22:11,359] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 15:22:14,044] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 15:22:44,561] OS name = windows 10
+[INFO ] [2022-09-11 15:22:44,562] Driver instance name = chromedriver: chrome on windows (74a6808d3de468e709aa85d607abd133)
+[INFO ] [2022-09-11 15:27:04,294] Precondition 1: get browser and url
+[INFO ] [2022-09-11 15:27:14,616] Precondition 2: open Login page
+[INFO ] [2022-09-11 15:27:14,627] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:27:15,247] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:27:15,583] Precondition 5: click to Login button
+[INFO ] [2022-09-11 15:27:21,679] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 15:27:25,336] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 15:27:25,353] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 15:27:36,499] Post_01_Create 3: input to Post Title with value:  Post title 8201
+[INFO ] [2022-09-11 15:27:39,662] Post_01_Create 4: input to Post body with value:  Post body 8201
+[INFO ] [2022-09-11 15:27:43,693] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 15:27:44,363] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 15:27:44,927] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 15:27:47,616] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 15:27:50,778] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 8201
+[INFO ] [2022-09-11 15:27:51,211] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 15:27:54,770] Post_02_Search_And_Read 4: verify Search table contain:  Post title 8201
+[INFO ] [2022-09-11 15:27:54,949] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 15:27:55,073] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 15:27:57,580] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 15:28:27,891] OS name = windows 10
+[INFO ] [2022-09-11 15:28:27,891] Driver instance name = chromedriver: chrome on windows (25bd10f464d0d4f9cddf6b06dded9374)
+[INFO ] [2022-09-11 15:39:11,976] Precondition 1: get browser and url
+[INFO ] [2022-09-11 15:39:18,637] Precondition 2: open Login page
+[INFO ] [2022-09-11 15:39:18,650] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:39:19,155] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:39:19,374] Precondition 5: click to Login button
+[INFO ] [2022-09-11 15:39:25,292] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 15:39:27,384] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 15:39:27,393] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 15:39:34,412] Post_01_Create 3: input to Post Title with value:  Post title 33500
+[INFO ] [2022-09-11 15:39:37,799] Post_01_Create 4: input to Post body with value:  Post body 33500
+[INFO ] [2022-09-11 15:39:40,737] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 15:39:41,202] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 15:39:41,498] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 15:39:43,644] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 15:39:45,560] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 33500
+[INFO ] [2022-09-11 15:39:46,117] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 15:39:48,602] Post_02_Search_And_Read 4: verify Search table contain:  Post title 33500
+[INFO ] [2022-09-11 15:39:48,723] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 15:39:48,814] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 15:39:50,779] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 15:40:21,122] OS name = windows 10
+[INFO ] [2022-09-11 15:40:21,122] Driver instance name = chromedriver: chrome on windows (82a19beffdcdc48c9dc844969ca7d688)
+[INFO ] [2022-09-11 15:40:59,364] Precondition 1: get browser and url
+[INFO ] [2022-09-11 15:41:04,854] Precondition 2: open Login page
+[INFO ] [2022-09-11 15:41:04,862] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:41:05,311] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:41:05,537] Precondition 5: click to Login button
+[INFO ] [2022-09-11 15:41:09,840] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 15:41:11,933] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 15:41:11,942] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 15:41:19,379] Post_01_Create 3: input to Post Title with value:  Post title 72662
+[INFO ] [2022-09-11 15:41:22,100] Post_01_Create 4: input to Post body with value:  Post body 72662
+[INFO ] [2022-09-11 15:41:26,291] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 15:41:26,762] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 15:41:27,134] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 15:41:29,544] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 15:41:32,286] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 72662
+[INFO ] [2022-09-11 15:41:32,613] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 15:41:35,092] Post_02_Search_And_Read 4: verify Search table contain:  Post title 72662
+[INFO ] [2022-09-11 15:41:35,207] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 15:41:35,301] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 15:41:37,147] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 15:42:07,393] OS name = windows 10
+[INFO ] [2022-09-11 15:42:07,393] Driver instance name = chromedriver: chrome on windows (abfa0a936f8f1e11077e4f26843e86d3)
+[INFO ] [2022-09-11 15:50:05,827] Precondition 1: get browser and url
+[INFO ] [2022-09-11 15:50:12,683] Precondition 2: open Login page
+[INFO ] [2022-09-11 15:50:12,691] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:50:13,181] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 15:50:13,412] Precondition 5: click to Login button
+[INFO ] [2022-09-11 15:50:18,508] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 15:50:21,280] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 15:50:21,292] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 15:50:30,543] Post_01_Create 3: input to Post Title with value:  Post title 97786
+[INFO ] [2022-09-11 15:50:33,432] Post_01_Create 4: input to Post body with value:  Post body 97786
+[INFO ] [2022-09-11 15:50:36,552] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 15:50:37,155] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 15:50:37,556] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 15:50:40,147] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 15:50:43,198] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 97786
+[INFO ] [2022-09-11 15:50:43,546] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 15:50:46,053] Post_02_Search_And_Read 4: verify Search table contain:  Post title 97786
+[INFO ] [2022-09-11 15:50:46,167] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 15:50:46,257] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 15:50:48,190] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 15:51:18,790] OS name = windows 10
+[INFO ] [2022-09-11 15:51:18,790] Driver instance name = chromedriver: chrome on windows (80c78528eee95ad51fb497d2e9d22123)
+[INFO ] [2022-09-11 16:04:03,066] Precondition 1: get browser and url
+[INFO ] [2022-09-11 16:04:10,982] Precondition 2: open Login page
+[INFO ] [2022-09-11 16:04:11,004] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:04:11,981] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:04:12,259] Precondition 5: click to Login button
+[INFO ] [2022-09-11 16:04:18,439] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 16:04:21,200] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 16:04:21,209] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 16:04:28,389] Post_01_Create 3: input to Post Title with value:  Post title 1779
+[INFO ] [2022-09-11 16:04:31,645] Post_01_Create 4: input to Post body with value:  Post body 1779
+[INFO ] [2022-09-11 16:04:34,558] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 16:04:35,220] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 16:04:35,584] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 16:04:37,593] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 16:04:40,392] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 1779
+[INFO ] [2022-09-11 16:04:40,727] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 16:04:43,220] Post_02_Search_And_Read 4: verify Search table contain:  Post title 1779
+[INFO ] [2022-09-11 16:04:43,334] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 16:04:43,433] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 16:04:46,253] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 16:05:16,570] OS name = windows 10
+[INFO ] [2022-09-11 16:05:16,570] Driver instance name = chromedriver: chrome on windows (a1209242c99207eb3f1e0a6c44a24c22)
+[INFO ] [2022-09-11 16:18:02,462] Precondition 1: get browser and url
+[INFO ] [2022-09-11 16:18:11,655] Precondition 2: open Login page
+[INFO ] [2022-09-11 16:18:11,724] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:18:12,252] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:18:12,486] Precondition 5: click to Login button
+[INFO ] [2022-09-11 16:18:17,169] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 16:18:20,627] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 16:18:20,638] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 16:18:29,586] Post_01_Create 3: input to Post Title with value:  Post title 50519
+[INFO ] [2022-09-11 16:18:32,113] Post_01_Create 4: input to Post body with value:  Post body 50519
+[INFO ] [2022-09-11 16:18:35,669] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 16:18:36,093] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 16:18:36,388] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 16:18:39,308] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 16:18:43,860] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 50519
+[INFO ] [2022-09-11 16:18:44,431] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 16:18:47,759] Post_02_Search_And_Read 4: verify Search table contain:  Post title 50519
+[INFO ] [2022-09-11 16:18:47,872] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 16:18:47,970] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 16:18:49,832] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 16:19:20,132] OS name = windows 10
+[INFO ] [2022-09-11 16:19:20,133] Driver instance name = chromedriver: chrome on windows (0c91dd928e0c9e44be0e4af4819264aa)
+[INFO ] [2022-09-11 16:22:59,972] Precondition 1: get browser and url
+[INFO ] [2022-09-11 16:23:05,203] Precondition 2: open Login page
+[INFO ] [2022-09-11 16:23:05,285] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:23:22,973] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:23:23,249] Precondition 5: click to Login button
+[INFO ] [2022-09-11 16:23:28,942] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 16:23:32,115] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 16:23:32,128] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 16:23:42,274] Post_01_Create 3: input to Post Title with value:  Post title 78029
+[INFO ] [2022-09-11 16:23:44,648] Post_01_Create 4: input to Post body with value:  Post body 78029
+[INFO ] [2022-09-11 16:23:48,061] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 16:23:48,881] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 16:23:49,384] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 16:23:51,908] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 16:23:53,886] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 78029
+[INFO ] [2022-09-11 16:23:54,359] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 16:23:57,753] Post_02_Search_And_Read 4: verify Search table contain:  Post title 78029
+[INFO ] [2022-09-11 16:23:57,965] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 16:23:58,086] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 16:24:01,295] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 16:25:01,641] OS name = windows 10
+[INFO ] [2022-09-11 16:25:01,642] Driver instance name = chromedriver: chrome on windows (394ab0f7d6b260a9bffe6d69e5b7c74f)
+[INFO ] [2022-09-11 16:29:09,240] Precondition 1: get browser and url
+[INFO ] [2022-09-11 16:29:16,813] Precondition 2: open Login page
+[INFO ] [2022-09-11 16:29:16,879] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:29:17,523] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-11 16:29:17,772] Precondition 5: click to Login button
+[INFO ] [2022-09-11 16:29:23,543] Precondition 6: click to Post menu link
+[INFO ] [2022-09-11 16:29:27,178] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-11 16:29:27,191] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-11 16:29:35,373] Post_01_Create 3: input to Post Title with value:  Post title 77326
+[INFO ] [2022-09-11 16:29:38,062] Post_01_Create 4: input to Post body with value:  Post body 77326
+[INFO ] [2022-09-11 16:29:41,250] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-11 16:29:41,920] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-11 16:29:42,311] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-11 16:29:44,361] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-11 16:29:46,625] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post title 77326
+[INFO ] [2022-09-11 16:29:47,092] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-11 16:29:49,704] Post_02_Search_And_Read 4: verify Search table contain:  Post title 77326
+[INFO ] [2022-09-11 16:29:49,825] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-11 16:29:49,926] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-11 16:29:51,748] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-11 16:30:22,047] OS name = windows 10
+[INFO ] [2022-09-11 16:30:22,048] Driver instance name = chromedriver: chrome on windows (93ba482331999273abc40c160c15e232)
+[INFO ] [2022-09-12 21:22:40,229] Precondition 1: get browser and url
+[INFO ] [2022-09-12 21:22:52,553] OS name = windows 10
+[INFO ] [2022-09-12 21:22:52,554] Cannot invoke "Object.toString()" because "driver" is null
+[INFO ] [2022-09-12 21:23:47,343] Precondition 1: get browser and url
+[INFO ] [2022-09-12 21:23:57,643] Precondition 2: open Login page
+[INFO ] [2022-09-12 21:23:57,660] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:23:58,301] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:23:58,575] Precondition 5: click to Login button
+[INFO ] [2022-09-12 21:24:06,815] Precondition 6: click to Post menu link
+[INFO ] [2022-09-12 21:24:10,434] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-12 21:24:10,446] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-12 21:24:23,839] Post_01_Create 3: input to Post Title with value:  Post Title 31148
+[INFO ] [2022-09-12 21:24:26,857] Post_01_Create 4: input to Post body with value:  Post body 31148
+[INFO ] [2022-09-12 21:24:32,545] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-12 21:24:33,265] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-12 21:24:33,636] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-12 21:24:36,695] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-12 21:24:40,374] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post Title 31148
+[INFO ] [2022-09-12 21:24:40,849] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-12 21:24:44,491] Post_02_Search_And_Read 4: verify Search table contain:  Post Title 31148
+[INFO ] [2022-09-12 21:24:44,637] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-12 21:24:44,780] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-12 21:24:48,126] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-12 21:25:18,667] OS name = windows 10
+[INFO ] [2022-09-12 21:25:18,668] Driver instance name = chromedriver: chrome on windows (003e8926b616be74305454163908b313)
+[INFO ] [2022-09-12 21:42:10,826] Precondition 1: get browser and url
+[INFO ] [2022-09-12 21:42:19,626] Precondition 2: open Login page
+[INFO ] [2022-09-12 21:42:19,761] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:42:20,311] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:42:20,592] Precondition 5: click to Login button
+[INFO ] [2022-09-12 21:42:27,977] Precondition 6: click to Post menu link
+[INFO ] [2022-09-12 21:42:32,476] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-12 21:42:32,505] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-12 21:42:46,305] Post_01_Create 3: input to Post Title with value:  Post Title 65183
+[INFO ] [2022-09-12 21:42:51,179] Post_01_Create 4: input to Post body with value:  Post body 65183
+[INFO ] [2022-09-12 21:42:55,915] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-12 21:42:56,939] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-12 21:42:57,368] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-12 21:43:00,506] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-12 21:43:04,167] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post Title 65183
+[INFO ] [2022-09-12 21:43:04,628] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-12 21:43:08,589] Post_02_Search_And_Read 4: verify Search table contain:  Post Title 65183
+[INFO ] [2022-09-12 21:43:08,770] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-12 21:43:08,894] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-12 21:43:11,449] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-12 21:43:41,737] OS name = windows 10
+[INFO ] [2022-09-12 21:43:41,737] Driver instance name = chromedriver: chrome on windows (90fc582a21083d6138a0b1779013be13)
+[INFO ] [2022-09-12 21:45:17,807] Precondition 1: get browser and url
+[INFO ] [2022-09-12 21:45:28,352] Precondition 2: open Login page
+[INFO ] [2022-09-12 21:45:28,440] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:45:29,171] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-12 21:45:29,453] Precondition 5: click to Login button
+[INFO ] [2022-09-12 21:45:35,964] Precondition 6: click to Post menu link
+[INFO ] [2022-09-12 21:45:39,187] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-12 21:45:39,212] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-12 21:45:51,037] Post_01_Create 3: input to Post Title with value:  Post Title 12363
+[INFO ] [2022-09-12 21:45:54,821] Post_01_Create 4: input to Post body with value:  Post body 12363
+[INFO ] [2022-09-12 21:45:59,423] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-12 21:46:00,163] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-12 21:46:00,997] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-12 21:46:03,815] Post_02_Search_And_Read 1: Open 'Search Post' Page
+[INFO ] [2022-09-12 21:46:07,179] Post_02_Search_And_Read 2: input to Search post textbox with value:  Post Title 12363
+[INFO ] [2022-09-12 21:46:07,645] Post_02_Search_And_Read 3: click to Search post button
+[INFO ] [2022-09-12 21:46:11,544] Post_02_Search_And_Read 4: verify Search table contain:  Post Title 12363
+[INFO ] [2022-09-12 21:46:11,689] Post_02_Search_And_Read 5: verify Search table contain: automationfc
+[INFO ] [2022-09-12 21:46:11,847] Post_02_Search_And_Read 6: Open User Home Page
+[INFO ] [2022-09-12 21:46:16,275] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page

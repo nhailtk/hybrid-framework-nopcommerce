@@ -17,7 +17,7 @@ import demo.nopcommerce.com.pageObjects.user.UserLoginPageObject;
 import demo.nopcommerce.com.pageObjects.user.PageGeneratorManager;
 import demo.nopcommerce.com.pageObjects.user.UserRegisterPageObject;
 
-public class Level_17_Custom_Close_Browser extends BaseTest {
+public class Level_18_Pattern_Object extends BaseTest {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String validEmail;
@@ -35,34 +35,32 @@ public class Level_17_Custom_Close_Browser extends BaseTest {
 		validEmail = "automation" + randomEmailByNumber() + "@gmail.com";
 
 		registerPage = homePage.clickToRegisterLink();
+
+		registerPage.inputToTextboxById(driver, "FirstName", firstName);
+		registerPage.inputToTextboxById(driver, "LastName", lastName);
+		registerPage.inputToTextboxById(driver, "Email", validEmail);
+		registerPage.inputToTextboxById(driver, "Password", password);
+		registerPage.inputToTextboxById(driver, "ConfirmPassword", password);
+
 		
-		
-		registerPage.inputToFirstNameTextbox(firstName);
-		registerPage.inputToLastNameTextbox(lastName);
-		registerPage.inputToEmailTextbox(validEmail);
-		registerPage.inputToPasswordTextbox(password);
-		registerPage.inputToConfirmPasswordTextbox(password);
-		
-		registerPage.clickToRegisterButton();
+		registerPage.clickToButtonByName(driver,"Register");
 		Assert.assertEquals(registerPage.getSuccessMessageRegister(), "Your registration completed");
 
-		driver = null; 
-		
 		Assert.assertTrue(homePage.verifyElementIsDisplayed());
-		
+
 		homePage = registerPage.clickToLogOutUserLink(driver);
-
-		loginPage = homePage.clickToLoginLink();
-		loginPage.inputToEmailTextbox(validEmail);
-		loginPage.inputToPasswordTextbox(password);
-
-		homePage = loginPage.clickToLoginButton();
-		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}
 
 	@Test
-	public void TC_01_Search_With_Invalid_Data() {
+	public void TC_01_Login() {
+		loginPage = homePage.clickToLoginLink();
 
+		loginPage.inputToTextboxById(driver, "Email", validEmail);
+		loginPage.inputToTextboxById(driver, "Password", password);
+
+		loginPage.clickToButtonByName(driver,"Log in");
+		homePage = loginPage.getUserHomePage();
+		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}
 
 	@Test

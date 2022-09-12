@@ -49,5 +49,10 @@ public class UserLoginPageObject extends BasePage {
 		waitForElementVisible(driver, UserLoginPageUI.ERROR_UNSUCCESSFULL);
 		return getElementText(driver, UserLoginPageUI.ERROR_UNSUCCESSFULL);
 	}
+	
+	public UserHomePageObject getUserHomePage() {
+		return PageGeneratorManager.getUserHomePage(driver);
+
+	}
 
 }

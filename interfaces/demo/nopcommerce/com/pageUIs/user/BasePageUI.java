@@ -6,4 +6,7 @@ public class BasePageUI {
 	public static final String ORDER_LINK = "XPATH=//li[@class ='customer-orders inactive']/a";
 	public static final String REWARD_POINTS_LINK = "Xpath=//li[@class ='reward-points inactive']/a";
 	public static final String DYNAMIC_MY_ACCOUNT_LINK = "Xpath=//li[@class ='%s']/a";
+	
+	public static final String DYNAMIC_TEXTBOX_BY_ID = "xpath=//input[@id='%s']";
+	public static final String DYNAMIC_BUTTON_BY_NAME = "xpath=//button[contains(text(),'%s')]";
 }

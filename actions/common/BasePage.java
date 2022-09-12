@@ -1,6 +1,7 @@
 package common;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +39,7 @@ public class BasePage {
 		return new BasePage();
 	}
 
-	protected void openPageUrl(WebDriver driver, String pageUrl) {
+	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
 
@@ -46,7 +47,7 @@ public class BasePage {
 		return driver.getTitle();
 	}
 
-	protected String getPageUrl(WebDriver driver) {
+	public String getPageUrl(WebDriver driver) {
 		return driver.getCurrentUrl();
 	}
 
@@ -609,7 +610,24 @@ public class BasePage {
 		fileFullName = fileFullName.trim();
 		getElement(driver, HomePageUI.UPLOAD_FILE).sendKeys(fileFullName);
 	}
+	
+	public void inputToTextboxById(WebDriver driver, String dynamicLocatorById, String value) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, dynamicLocatorById);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, dynamicLocatorById);
+		
+	}
+	
+	public void clickToButtonByName(WebDriver driver, String dynamicLocatorByName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_NAME, dynamicLocatorByName);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_NAME, dynamicLocatorByName);
+		
+	}
 
+	public com.wordpress.pageObjects.UserHomePageObject openUserHomePage(WebDriver driver, String urlUser) {
+		openPageUrl(driver, urlUser);
+		return com.wordpress.pageObjects.PageGeneratorManager.getUserHomePage(driver);
+	}
+	
 	protected long shortTimeOut = GlobalConstants.SHORT_TIMEOUT;
 	protected long longTimeOut = GlobalConstants.LONG_TIMEOUT;
 

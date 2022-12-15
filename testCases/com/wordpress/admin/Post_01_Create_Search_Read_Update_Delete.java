@@ -31,6 +31,8 @@ public class Post_01_Create_Search_Read_Update_Delete extends BaseTest {
 	int randomNumber = randomByNumber();
 	String postTitle = " Post Title " + randomNumber;
 	String postBody = " Post body " + randomNumber;
+	String editedPostTitle = " Edited Post Title " + randomNumber;
+	String editedPostBody = "Edited Post body " + randomNumber;
 	String postSearchPageURL = "";
 	String authorName = "automationfc";
 	String authorNameInEndUser = "Automationfc";
@@ -80,14 +82,14 @@ public class Post_01_Create_Search_Read_Update_Delete extends BaseTest {
 		postAddNewPage.clickToPublishButton();
 
 		log.info("Post_01_Create 6: click to Pre-Publish button");
-		postAddNewPage.clickToPrePublishButton();
+		postAddNewPage.clickToPrePublishAndUpdateButton();
 
 		log.info("Post_01_Create 7: verify post published message");
 		Assert.assertTrue(postAddNewPage.isDisplayedPostPublishMessage());
 
 	}
 
-	@Test
+	
 	public void Post_02_Search_And_Read() {
 		log.info("Post_02_Search_And_Read 1: Open 'Search Post' Page");
 		postSearchPage = postAddNewPage.openSearchPostPage(driver, postSearchPageURL);
@@ -125,6 +127,47 @@ public class Post_01_Create_Search_Read_Update_Delete extends BaseTest {
 
 	@Test
 	public void Post_03_Update() {
+		log.info("Post_03_Update 1: Open Admin Dashboard Page");
+		dashboardPage = postAddNewPage.OpenAdminDashboardPage(driver, this.urlAdmin);
+		
+		log.info("Post_03_Update 2: Click to Post menu link");
+		postSearchPage = dashboardPage.clickToPostMenuLink();
+		
+		log.info("Post_03_Update 3: Input to Search post textbox with value: " + postTitle);
+		postSearchPage.inputToSearchPostTextbox(postTitle);
+		
+		log.info("Post_03_Update 4: Click to Search button");
+		postSearchPage.clickToSearchButton();
+		
+		log.info("Post_03_Update 5: Click to title post");
+		postAddNewPage = postSearchPage.clickToPostTitle(postTitle);
+		
+		log.info("Post_03_Update 6: Edit post title ");
+		postAddNewPage.inputToPostTitleTextbox(editedPostTitle);
+		
+		log.info("Post_03_Update 7: Edit post body");
+		postAddNewPage.inputToEditedPostBodyTextbox(editedPostBody);
+		
+		log.info("Post_03_Update 8: Click to Update button");
+		postAddNewPage.clickToPrePublishAndUpdateButton(); 
+		
+		log.info("Post_03_Update 9: Open User Home Page");
+		userHomePage = postSearchPage.openUserHomePage(driver, this.urlUser);
+
+		log.info("Post_03_Update 10: Verify informations displayed in User Home Page");
+		Assert.assertTrue(userHomePage.isPostInforDisplayedWithPostTitle(editedPostTitle));
+		Assert.assertTrue(userHomePage.isPostInforDisplayedWithPostBody(editedPostBody));
+		Assert.assertTrue(userHomePage.isPostInforDisplayedWithPostTime(editedPostTitle, currentDay));
+		Assert.assertTrue(userHomePage.isPostInforDisplayedWithPostAuthor(editedPostTitle, authorNameInEndUser));
+
+		log.info("Post_03_Update 11: Click to Title Post");
+		userPostDetailPage = userHomePage.clickToTitlePost();
+
+		log.info("Post_03_Update 12: Verify informations displayed in Post Detail Page");
+		Assert.assertTrue(userPostDetailPage.isPostInforDisplayedWithPostTitle(editedPostTitle));
+		Assert.assertTrue(userPostDetailPage.isPostInforDisplayedWithPostTime(editedPostTitle, currentDay));
+		Assert.assertTrue(userPostDetailPage.isPostInforDisplayedWithPostBody(editedPostBody));
+		Assert.assertTrue(userPostDetailPage.isPostInforDisplayedWithPostAuthor(editedPostTitle, authorNameInEndUser));
 
 	}
 
@@ -135,6 +178,6 @@ public class Post_01_Create_Search_Read_Update_Delete extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		closeBrowserAndDriver(driver);
+		//closeBrowserAndDriver(driver);
 	}
 }

@@ -32,11 +32,19 @@ public class AdminPostSearchPageObject extends BasePage{
 		
 	}
 
-	public boolean isPostSearchTableDisplayed(String headerID, String postTitle) {
+	public boolean isPostSearchTableDisplayed(String headerID, String tableRowValue) {
 		int index = getElementSize(driver, AdminPostSearchPageUI.TABLE_HEADER_INDEX_BY_HEADER_NAME, headerID) + 1;
-		waitForElementVisible(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(index),postTitle);
-		return elementIsDisplayed(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(index),postTitle);
+		waitForElementVisible(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(index),tableRowValue);
+		return elementIsDisplayed(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(index),tableRowValue);
 			
+	}
+
+	public AdminPostAddNewPageObject clickToPostTitle(String tableRowValue) {
+		//int index = getElementSize(driver, AdminPostSearchPageUI.TABLE_HEADER_INDEX_BY_HEADER_NAME, headerID) + 1;
+		waitForElementClickable(driver, AdminPostSearchPageUI.TITLE_VALUE_IN_ROW,tableRowValue);
+		//waitForElementVisible(driver, AdminPostSearchPageUI.TITLE_VALUE_IN_ROW,String.valueOf(index), tableRowValue);
+		clickToElement(driver, AdminPostSearchPageUI.TITLE_VALUE_IN_ROW,tableRowValue);
+		return PageGeneratorManager.getPostAddNewPage(driver);
 	}
 
 

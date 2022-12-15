@@ -72,6 +72,31 @@ public class BaseTest {
 		return driver;
 	}
 
+	private String getEnviroment(String envName) {
+		String url = null;
+		switch (envName) {
+		case "dev": {
+			url = "https://demo.nopcommerce.com/";
+			break;
+		}
+		case "testing": {
+			url = "https://www.google.com/";
+			break;
+		}
+		case "staging": {
+			url = "https://demo.nopcommerce.com/";
+			break;
+		}
+		case "live": {
+			url = "https://demo.nopcommerce.com/";
+			break;
+		}
+		default:
+			throw new RuntimeException("Unexpected value: " + envName);
+		}
+		return url;
+	}
+
 	public WebDriver getWebDriver(String browser, String appUrl) {
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();

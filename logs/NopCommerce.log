@@ -594,3 +594,276 @@ Session ID: cde6543dab4103fcb54c217b027a01e6
 [INFO ] [2022-09-12 21:46:11,689] Post_02_Search_And_Read 5: verify Search table contain: automationfc
 [INFO ] [2022-09-12 21:46:11,847] Post_02_Search_And_Read 6: Open User Home Page
 [INFO ] [2022-09-12 21:46:16,275] Post_02_Search_And_Read 7: Verify informations displayed in User Home Page
+[INFO ] [2022-09-16 06:30:03,620] Precondition 1: get browser and url
+[INFO ] [2022-09-16 06:30:16,759] Precondition 2: open Login page
+[INFO ] [2022-09-16 06:30:16,863] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:30:17,423] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:30:17,869] Precondition 5: click to Login button
+[INFO ] [2022-09-16 06:30:30,143] Precondition 6: click to Post menu link
+[INFO ] [2022-09-16 06:30:35,266] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-16 06:30:35,312] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-16 06:30:52,717] Post_01_Create 3: input to Post Title with value:  Post Title 59894
+[INFO ] [2022-09-16 06:30:55,655] Post_01_Create 4: input to Post body with value:  Post body 59894
+[INFO ] [2022-09-16 06:31:01,103] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-16 06:31:02,358] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-16 06:31:02,959] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-16 06:31:06,806] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-16 06:31:07,284] OS name = windows 10
+[INFO ] [2022-09-16 06:31:07,285] Driver instance name = chromedriver: chrome on windows (3f7bf924395e6dd2a2c455c9fc0ae46b)
+[INFO ] [2022-09-16 06:32:33,084] Precondition 1: get browser and url
+[INFO ] [2022-09-16 06:32:41,287] Precondition 2: open Login page
+[INFO ] [2022-09-16 06:32:41,299] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:32:41,855] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:32:42,133] Precondition 5: click to Login button
+[INFO ] [2022-09-16 06:32:47,763] Precondition 6: click to Post menu link
+[INFO ] [2022-09-16 06:32:50,724] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-16 06:32:50,736] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-16 06:33:00,986] Post_01_Create 3: input to Post Title with value:  Post Title 24151
+[INFO ] [2022-09-16 06:33:03,405] Post_01_Create 4: input to Post body with value:  Post body 24151
+[INFO ] [2022-09-16 06:33:07,592] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-16 06:33:08,427] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-16 06:33:08,914] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-16 06:33:11,779] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-16 06:33:15,138] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-16 06:33:17,458] Post_03_Update 3: Input to Search post textbox with value:  Post Title 24151
+[INFO ] [2022-09-16 06:33:17,998] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-16 06:33:21,322] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-16 06:33:21,514] Post_03_Update 6: Edit post title 
+[INFO ] [2022-09-16 06:33:51,846] OS name = windows 10
+[INFO ] [2022-09-16 06:33:51,846] Driver instance name = chromedriver: chrome on windows (9265a90fb317fbc371b4e1e7633b38bd)
+[INFO ] [2022-09-16 06:39:37,939] Precondition 1: get browser and url
+[INFO ] [2022-09-16 06:39:46,702] Precondition 2: open Login page
+[INFO ] [2022-09-16 06:39:46,719] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:39:47,340] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:39:47,637] Precondition 5: click to Login button
+[INFO ] [2022-09-16 06:39:53,478] Precondition 6: click to Post menu link
+[INFO ] [2022-09-16 06:39:56,714] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-16 06:39:56,728] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-16 06:40:06,760] Post_01_Create 3: input to Post Title with value:  Post Title 38050
+[INFO ] [2022-09-16 06:40:11,434] Post_01_Create 4: input to Post body with value:  Post body 38050
+[INFO ] [2022-09-16 06:40:15,608] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-16 06:40:16,590] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-16 06:40:17,055] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-16 06:40:20,003] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-16 06:40:22,857] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-16 06:40:25,656] Post_03_Update 3: Input to Search post textbox with value:  Post Title 38050
+[INFO ] [2022-09-16 06:40:26,100] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-16 06:40:30,497] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-16 06:40:30,702] Post_03_Update 6: Edit post title 
+[INFO ] [2022-09-16 06:41:01,036] OS name = windows 10
+[INFO ] [2022-09-16 06:41:01,037] Driver instance name = chromedriver: chrome on windows (507d0c813ed0e90f482e45ea75e3dcd3)
+[INFO ] [2022-09-16 06:42:07,219] Precondition 1: get browser and url
+[INFO ] [2022-09-16 06:42:14,718] Precondition 2: open Login page
+[INFO ] [2022-09-16 06:42:14,729] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:42:15,332] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:42:15,608] Precondition 5: click to Login button
+[INFO ] [2022-09-16 06:42:21,747] Precondition 6: click to Post menu link
+[INFO ] [2022-09-16 06:42:25,594] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-16 06:42:25,606] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-16 06:42:36,458] Post_01_Create 3: input to Post Title with value:  Post Title 74574
+[INFO ] [2022-09-16 06:42:39,009] Post_01_Create 4: input to Post body with value:  Post body 74574
+[INFO ] [2022-09-16 06:42:43,151] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-16 06:42:43,681] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-16 06:42:44,094] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-16 06:42:46,852] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-16 06:42:50,177] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-16 06:42:52,389] Post_03_Update 3: Input to Search post textbox with value:  Post Title 74574
+[INFO ] [2022-09-16 06:42:52,845] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-16 06:42:56,475] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-16 06:42:59,682] Post_03_Update 6: Edit post title 
+[INFO ] [2022-09-16 06:43:30,101] OS name = windows 10
+[INFO ] [2022-09-16 06:43:30,102] Driver instance name = chromedriver: chrome on windows (4271a2f69386a9362ae80f7671cba20c)
+[INFO ] [2022-09-16 06:57:12,570] Precondition 1: get browser and url
+[INFO ] [2022-09-16 06:57:22,846] Precondition 2: open Login page
+[INFO ] [2022-09-16 06:57:22,857] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:57:23,464] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-16 06:57:23,757] Precondition 5: click to Login button
+[INFO ] [2022-09-16 06:57:32,276] Precondition 6: click to Post menu link
+[INFO ] [2022-09-16 06:57:37,910] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-16 06:57:37,936] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-16 06:57:49,824] Post_01_Create 3: input to Post Title with value:  Post Title 74814
+[INFO ] [2022-09-16 06:57:52,724] Post_01_Create 4: input to Post body with value:  Post body 74814
+[INFO ] [2022-09-16 06:57:57,352] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-16 06:57:58,364] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-16 06:57:59,018] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-16 06:58:02,256] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-16 06:58:06,811] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-16 06:58:10,136] Post_03_Update 3: Input to Search post textbox with value:  Post Title 74814
+[INFO ] [2022-09-16 06:58:10,759] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-16 06:58:15,251] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-16 06:58:45,588] OS name = windows 10
+[INFO ] [2022-09-16 06:58:45,589] Driver instance name = chromedriver: chrome on windows (f5cce1e5ca0472620798dc6797afbe36)
+[INFO ] [2022-09-20 06:13:10,567] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:13:17,174] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:13:17,336] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:16:38,143] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:16:48,997] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:16:49,024] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:16:49,877] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:16:50,327] Precondition 5: click to Login button
+[INFO ] [2022-09-20 06:16:58,974] Precondition 6: click to Post menu link
+[INFO ] [2022-09-20 06:17:02,809] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-20 06:17:02,837] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-20 06:17:20,958] Post_01_Create 3: input to Post Title with value:  Post Title 88100
+[INFO ] [2022-09-20 06:17:24,853] Post_01_Create 4: input to Post body with value:  Post body 88100
+[INFO ] [2022-09-20 06:17:32,063] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-20 06:17:33,681] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-20 06:17:34,523] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-20 06:17:38,388] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-20 06:17:42,418] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-20 06:17:45,187] Post_03_Update 3: Input to Search post textbox with value:  Post Title 88100
+[INFO ] [2022-09-20 06:17:45,662] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-20 06:17:49,999] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-20 06:21:34,348] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:21:43,716] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:21:43,730] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:21:44,236] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:21:44,537] Precondition 5: click to Login button
+[INFO ] [2022-09-20 06:21:50,365] Precondition 6: click to Post menu link
+[INFO ] [2022-09-20 06:21:53,529] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-20 06:21:53,541] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-20 06:22:05,545] Post_01_Create 3: input to Post Title with value:  Post Title 29541
+[INFO ] [2022-09-20 06:22:10,962] Post_01_Create 4: input to Post body with value:  Post body 29541
+[INFO ] [2022-09-20 06:22:14,066] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-20 06:22:14,159] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-20 06:23:21,981] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:23:30,137] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:23:30,149] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:23:30,763] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:23:31,041] Precondition 5: click to Login button
+[INFO ] [2022-09-20 06:23:37,127] Precondition 6: click to Post menu link
+[INFO ] [2022-09-20 06:23:39,931] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-20 06:23:39,942] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-20 06:23:49,895] Post_01_Create 3: input to Post Title with value:  Post Title 26796
+[INFO ] [2022-09-20 06:23:52,595] Post_01_Create 4: input to Post body with value:  Post body 26796
+[INFO ] [2022-09-20 06:23:57,131] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-20 06:23:58,042] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-20 06:23:58,484] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-20 06:24:01,516] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-20 06:24:05,217] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-20 06:24:07,961] Post_03_Update 3: Input to Search post textbox with value:  Post Title 26796
+[INFO ] [2022-09-20 06:24:08,400] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-20 06:24:11,768] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-20 06:32:04,319] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:32:12,503] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:32:12,517] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:32:13,099] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:32:13,402] Precondition 5: click to Login button
+[INFO ] [2022-09-20 06:32:19,209] Precondition 6: click to Post menu link
+[INFO ] [2022-09-20 06:32:23,787] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-20 06:32:23,811] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-20 06:32:34,807] Post_01_Create 3: input to Post Title with value:  Post Title 73698
+[INFO ] [2022-09-20 06:32:38,132] Post_01_Create 4: input to Post body with value:  Post body 73698
+[INFO ] [2022-09-20 06:32:42,005] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-20 06:32:42,837] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-20 06:32:43,180] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-20 06:32:46,158] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-20 06:32:49,552] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-20 06:32:52,184] Post_03_Update 3: Input to Search post textbox with value:  Post Title 73698
+[INFO ] [2022-09-20 06:32:52,645] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-20 06:32:56,169] Post_03_Update 5: Click to title post
+[INFO ] [2022-09-20 06:32:56,843] Post_03_Update 6: Edit post title 
+[INFO ] [2022-09-20 06:52:18,131] Precondition 1: get browser and url
+[INFO ] [2022-09-20 06:52:27,659] Precondition 2: open Login page
+[INFO ] [2022-09-20 06:52:27,672] Precondition 3:  input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:52:28,348] Precondition 4: input to Username textbox with value: automationfc
+[INFO ] [2022-09-20 06:52:28,626] Precondition 5: click to Login button
+[INFO ] [2022-09-20 06:52:35,320] Precondition 6: click to Post menu link
+[INFO ] [2022-09-20 06:52:39,075] Post_01_Create 1: get Post Search Page URL
+[INFO ] [2022-09-20 06:52:39,087] Post_01_Create 2: click to Add New button
+[INFO ] [2022-09-20 06:52:50,604] Post_01_Create 3: input to Post Title with value:  Post Title 71610
+[INFO ] [2022-09-20 06:52:53,802] Post_01_Create 4: input to Post body with value:  Post body 71610
+[INFO ] [2022-09-20 06:52:58,845] Post_01_Create 5: click to Publish button
+[INFO ] [2022-09-20 06:52:59,541] Post_01_Create 6: click to Pre-Publish button
+[INFO ] [2022-09-20 06:53:00,080] Post_01_Create 7: verify post published message
+[INFO ] [2022-09-20 06:53:03,481] Post_03_Update 1: Open Admin Dashboard Page
+[INFO ] [2022-09-20 06:53:08,060] Post_03_Update 2: Click to Post menu link
+[INFO ] [2022-09-20 06:53:10,294] Post_03_Update 3: Input to Search post textbox with value:  Post Title 71610
+[INFO ] [2022-09-20 06:53:10,739] Post_03_Update 4: Click to Search button
+[INFO ] [2022-09-20 06:53:14,155] Post_03_Update 5: Click to title post
+[INFO ] [2022-10-20 06:29:24,904] Register - step 1 - click to 'Register' link
+[INFO ] [2022-10-20 06:29:26,296] Register - step 2 - input value into ' First name' textbox: Rosita
+[INFO ] [2022-10-20 06:29:26,539] Register - step 3 - input value into 'Last name' textbox: Pollich
+[INFO ] [2022-10-20 06:29:26,764] Register - step 4 - input value into 'Email' textbox: jamison.boyer@hotmail.com
+[INFO ] [2022-10-20 06:29:27,036] Register - step 5 - input value into 'Password' textbox: 9#dibBG2S$thkLS
+[INFO ] [2022-10-20 06:29:27,359] Register - step 6 - input value into 'Confirm password' textbox: 9#dibBG2S$thkLS
+[INFO ] [2022-10-20 06:29:27,736] Register - step 7 - click to 'Register' button
+[INFO ] [2022-10-20 06:29:28,736] Register - step 8 - verify customer info
+[INFO ] [2022-10-20 06:29:30,267] Login - step 1 - click to 'Login' link
+[INFO ] [2022-10-20 06:29:31,969] Login - step 2 - input value into 'Email' textbox: jamison.boyer@hotmail.com
+[INFO ] [2022-10-20 06:29:32,318] Login - step 3 - input value into 'Password' textbox: 9#dibBG2S$thkLS
+[INFO ] [2022-10-20 06:29:32,583] Login - step 4 - click to 'Login' button
+[INFO ] [2022-10-20 06:29:33,521] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-10-26 06:57:36,424] Register - step 1 - click to 'Register' link
+[INFO ] [2022-10-26 06:57:37,607] Register - step 2 - input value into ' First name' textbox: null
+[INFO ] [2022-10-26 06:58:33,092] Register - step 1 - click to 'Register' link
+[INFO ] [2022-10-26 06:58:34,353] Register - step 2 - input value into ' First name' textbox: Lan
+[INFO ] [2022-10-26 06:58:34,566] Register - step 3 - input value into 'Last name' textbox: Nguyen Ngoc
+[INFO ] [2022-10-26 06:58:34,793] Register - step 4 - input value into 'Email' textbox: Lan4780@faker.com
+[INFO ] [2022-10-26 06:58:34,990] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-10-26 06:58:35,148] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-10-26 06:58:35,299] Register - step 7 - click to 'Register' button
+[INFO ] [2022-10-26 06:58:36,208] Register - step 8 - verify customer info
+[INFO ] [2022-10-26 06:58:36,304] Register - step 9 - check undisplayed
+[INFO ] [2022-10-26 06:58:47,417] Login - step 1 - click to 'Login' link
+[INFO ] [2022-10-26 06:58:48,032] Login - step 2 - input value into 'Email' textbox: Lan4780@faker.com
+[INFO ] [2022-10-26 06:58:48,228] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-10-26 06:58:48,426] Login - step 4 - click to 'Login' button
+[INFO ] [2022-10-26 06:58:49,444] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-11-16 07:15:32,073] Register - step 1 - click to 'Register' link
+[INFO ] [2022-11-16 07:15:34,485] Register - step 2 - input value into ' First name' textbox: Lan
+[INFO ] [2022-11-16 07:15:34,820] Register - step 3 - input value into 'Last name' textbox: Nguyen Ngoc
+[INFO ] [2022-11-16 07:15:35,121] Register - step 4 - input value into 'Email' textbox: Lan9469@faker.com
+[INFO ] [2022-11-16 07:15:35,410] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-16 07:15:35,659] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-11-16 07:15:35,920] Register - step 7 - click to 'Register' button
+[INFO ] [2022-11-16 07:15:39,143] Register - step 8 - verify customer info
+[INFO ] [2022-11-16 07:15:39,228] Register - step 9 - check undisplayed
+[INFO ] [2022-11-16 07:15:51,645] Login - step 1 - click to 'Login' link
+[INFO ] [2022-11-16 07:15:53,988] Login - step 2 - input value into 'Email' textbox: Lan9469@faker.com
+[INFO ] [2022-11-16 07:15:54,531] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-16 07:15:55,009] Login - step 4 - click to 'Login' button
+[INFO ] [2022-11-16 07:15:57,381] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-11-30 06:24:20,780] Register - step 1 - click to 'Register' link
+[INFO ] [2022-11-30 06:24:22,155] Register - step 2 - input value into ' First name' textbox: Lan
+[INFO ] [2022-11-30 06:24:22,410] Register - step 3 - input value into 'Last name' textbox: Nguyen Ngoc
+[INFO ] [2022-11-30 06:24:22,613] Register - step 4 - input value into 'Email' textbox: Lan9216@faker.com
+[INFO ] [2022-11-30 06:24:22,810] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 06:24:22,967] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-11-30 06:24:23,133] Register - step 7 - click to 'Register' button
+[INFO ] [2022-11-30 06:24:24,701] Register - step 8 - verify customer info
+[INFO ] [2022-11-30 06:24:24,744] Register - step 9 - check undisplayed
+[INFO ] [2022-11-30 06:24:36,702] Login - step 1 - click to 'Login' link
+[INFO ] [2022-11-30 06:24:38,433] Login - step 2 - input value into 'Email' textbox: Lan9216@faker.com
+[INFO ] [2022-11-30 06:24:38,674] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 06:24:38,880] Login - step 4 - click to 'Login' button
+[INFO ] [2022-11-30 06:24:40,245] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-11-30 06:57:25,686] Register - step 1 - click to 'Register' link
+[INFO ] [2022-11-30 06:57:27,110] Register - step 2 - input value into ' First name' textbox: Lan
+[INFO ] [2022-11-30 06:57:27,345] Register - step 3 - input value into 'Last name' textbox: Nguyen Ngoc
+[INFO ] [2022-11-30 06:57:27,531] Register - step 4 - input value into 'Email' textbox: Lan7694@faker.com
+[INFO ] [2022-11-30 06:57:27,735] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 06:57:27,918] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-11-30 06:57:28,097] Register - step 7 - click to 'Register' button
+[INFO ] [2022-11-30 06:57:29,488] Register - step 8 - verify customer info
+[INFO ] [2022-11-30 06:57:29,532] Register - step 9 - check undisplayed
+[INFO ] [2022-11-30 06:57:41,781] Login - step 1 - click to 'Login' link
+[INFO ] [2022-11-30 06:57:42,898] Login - step 2 - input value into 'Email' textbox: Lan7694@faker.com
+[INFO ] [2022-11-30 06:57:43,142] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 06:57:43,347] Login - step 4 - click to 'Login' button
+[INFO ] [2022-11-30 06:57:44,527] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-11-30 07:06:11,143] Register - step 1 - click to 'Register' link
+[INFO ] [2022-11-30 07:06:12,397] Register - step 2 - input value into ' First name' textbox: Lan
+[INFO ] [2022-11-30 07:06:12,592] Register - step 3 - input value into 'Last name' textbox: Nguyen Ngoc
+[INFO ] [2022-11-30 07:06:12,800] Register - step 4 - input value into 'Email' textbox: Lan3639@faker.com
+[INFO ] [2022-11-30 07:06:13,018] Register - step 5 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 07:06:13,197] Register - step 6 - input value into 'Confirm password' textbox: 123456
+[INFO ] [2022-11-30 07:06:13,372] Register - step 7 - click to 'Register' button
+[INFO ] [2022-11-30 07:06:15,293] Register - step 8 - verify customer info
+[INFO ] [2022-11-30 07:06:15,345] Register - step 9 - check undisplayed
+[INFO ] [2022-11-30 07:06:27,915] Login - step 1 - click to 'Login' link
+[INFO ] [2022-11-30 07:06:31,203] Login - step 2 - input value into 'Email' textbox: Lan3639@faker.com
+[INFO ] [2022-11-30 07:06:31,516] Login - step 3 - input value into 'Password' textbox: 123456
+[INFO ] [2022-11-30 07:06:31,990] Login - step 4 - click to 'Login' button
+[INFO ] [2022-11-30 07:06:34,164] Login - step 5 - verify My Account Link displayed
+[INFO ] [2022-11-30 07:09:08,730] Register - step 1 - click to 'Register' link

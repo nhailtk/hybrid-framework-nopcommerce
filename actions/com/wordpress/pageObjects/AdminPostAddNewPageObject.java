@@ -39,7 +39,7 @@ public class AdminPostAddNewPageObject extends BasePage{
 		
 	}
 
-	public void clickToPrePublishButton() {
+	public void clickToPrePublishAndUpdateButton() {
 		waitForElementClickable(driver, AdminPostAddNewPageUI.PRE_PUBLISH_BUTTON);
 		clickToElement(driver, AdminPostAddNewPageUI.PRE_PUBLISH_BUTTON);
 		
@@ -48,6 +48,16 @@ public class AdminPostAddNewPageObject extends BasePage{
 	public AdminPostSearchPageObject openSearchPostPage(WebDriver driver2, String postSearchPageURL) {
 		openPageUrl(driver2, postSearchPageURL);
 		return PageGeneratorManager.getPostSearchPage(driver2);
+	}
+
+	public void inputToEditedPostBodyTextbox(String editedPostBody) {
+		waitForElementClickable(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_AFTER_CLICK);
+		clickToElement(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_AFTER_CLICK);
+		
+		waitForElementVisible(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_AFTER_CLICK);
+		clearValueInElementByPressKey(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_AFTER_CLICK);
+		sendkeyToElement(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_AFTER_CLICK, editedPostBody);
+		
 	}
 	
 }

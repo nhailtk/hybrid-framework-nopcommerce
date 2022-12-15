@@ -42,4 +42,6 @@ public class UserPostDetailPageObject extends BasePage {
 		return elementIsDisplayed(driver, UserPostDetailPageUI.USER_POST_DETAIL_TITLE, postTitle);
 	}
 
+
+
 }

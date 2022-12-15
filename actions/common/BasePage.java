@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.jquery.pageUIs.HomePageUI;
+import com.wordpress.pageObjects.AdminDashBoardPageObject;
 
 import demo.nopcommerce.com.pageObjects.user.UserAddressesPageObject;
 import demo.nopcommerce.com.pageObjects.user.UserCustomerInfoPageObject;
@@ -183,6 +184,11 @@ public class BasePage {
 		WebElement element = getElement(driver, xpathLocator);
 		element.clear();
 		element.sendKeys(textValue);
+	}
+	
+	protected void clearValueInElementByPressKey(WebDriver driver, String xpathLocator) {
+		WebElement element = getElement(driver, xpathLocator);
+		element.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
 	}
 
 	protected void sendkeyToElement(WebDriver driver, String xpathLocator, String textValue, String... dynamicValues) {
@@ -626,6 +632,11 @@ public class BasePage {
 	public com.wordpress.pageObjects.UserHomePageObject openUserHomePage(WebDriver driver, String urlUser) {
 		openPageUrl(driver, urlUser);
 		return com.wordpress.pageObjects.PageGeneratorManager.getUserHomePage(driver);
+	}
+	
+	public AdminDashBoardPageObject OpenAdminDashboardPage(WebDriver driver, String urlAdmin) {
+		openPageUrl(driver, urlAdmin);
+		return com.wordpress.pageObjects.PageGeneratorManager.getDashboardPage(driver);
 	}
 	
 	protected long shortTimeOut = GlobalConstants.SHORT_TIMEOUT;

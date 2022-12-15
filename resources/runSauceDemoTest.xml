@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SauceDemo">
+
+	<listeners>
+		<listener class-name="common.MethodListener"></listener>
+	</listeners>
+	<parameter name="url" value="https://www.saucedemo.com/" />
+	<test name="RunOnChrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="saucedemo.com.Level_19_Sort_Data" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
